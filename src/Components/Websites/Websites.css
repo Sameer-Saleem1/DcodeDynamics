@@ -1,0 +1,85 @@
+.website-container {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.website-container .website-card {
+  width: auto;
+  border: 2px solid white;
+  border-radius: 40px;
+  /* padding: 10px; */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 70% 30%;
+  margin: 0 20px;
+}
+
+.website-container .website-card .web-image {
+  width: 250px;
+  padding: 30px;
+  height: auto;
+  border-bottom: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.website-container .website-card .web-image img {
+  width: 220px;
+  margin-top: 25px;
+}
+
+.website-container .website-card .web-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  /* align-items: center; */
+}
+
+.web-desc h2 {
+  font-size: 22px;
+  margin-top: 8px !important;
+  margin: 0;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.web-desc p {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.web-desc .stars {
+  margin: -10px 20px;
+  margin-bottom: 1rem !important;
+  display: flex;
+  justify-content: space-between !important;
+}
+
+.star-color {
+  color: var(--green--);
+  padding: 0 !important;
+  font-size: 20px;
+}
+
+.circle {
+  position: absolute;
+  background-color: #242424;
+  bottom: -2.5rem;
+  left: 8rem;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart {
+  font-size: 30px;
+  color: var(--green--);
+}
