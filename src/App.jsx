@@ -1,14 +1,16 @@
-import "./App.css";
-import Tools from "./Components/Tools/Tools";
 import Websites from "./Components/Websites/Websites";
+import Tools from "./Components/Tools/Tools";
+import Navbar from './Components/Navbar/Navbar';
+import './App.css'
 
 function App() {
   return (
     <>
-      {/* <Tools /> */}
-      {/* <Websites /> */}
+      <Navbar/>
+      <Tools/>
+      <Websites/>
     </>
-  );
+  )
 }
 
 export default App;

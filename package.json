@@ -10,11 +10,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.1",
+    "bootstrap": "^5.3.3",
     "react": "^18.2.0",
+<<<<<<< HEAD
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
     "react-multi-carousel": "^2.8.4",
     "react-responsive-carousel": "^3.2.23"
+=======
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "^18.2.0",
+    "react-icons": "^5.0.1",
+    "react-router-dom": "^6.22.3"
+>>>>>>> a0d9c03d0605ba26981d9ddad84b86f70ec40dd0
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
