@@ -1,0 +1,239 @@
+/* Importing Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Anek+Gujarati&display=swap");
+
+/* Setting font-family */
+html, body, .nav-links {
+  font-family: 'Anek Gujarati', sans-serif;
+}
+
+/* Rest of your existing CSS */
+/* Add the rest of your CSS styles here */
+
+
+
+html {
+  background-color: black;
+  color: white;
+}
+
+body {
+  margin: 0; /* Remove default body margin */
+  padding: 0;
+}
+
+.navbar {
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  /* height: 80px; */
+  width: 100%;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Make navbar container span the full width */
+
+  
+}
+
+.navbar-logo {
+  color: #f8f7f4;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0 2rem;
+  
+}
+
+.nav-links {
+  color:#F8F7F4;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-image {
+  width: 150px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 0%;
+}
+
+.nav-icon {
+  color:#F8F7F4; /* Set icon color */
+  font-size: 24px; /* Set icon size */
+}
+.left-side{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+
+}
+
+.right-side{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  margin-right: 18px;
+}
+
+.middle{
+  margin-top: 0%;
+}
+.icon{
+  color: #2FF360;
+}
+
+.nav-links:hover {
+  color: #2FF360; /* Change color on hover */
+  transition: color 0.7s;
+}
+
+
+.nav-links:focus {
+  color: #2FF360; /* Change color on click */
+  position: relative; /* Position relative for absolute positioning of border */
+}
+
+.nav-links:focus::after {
+  content: ''; 
+  position: absolute;
+  left: 0; 
+  bottom: -3px; 
+  width: 100%; 
+  border-bottom: 3px solid #2FF360; 
+}
+
+
+
+/* For extra-large devices (large desktops) */
+@media screen and (min-width: 1200px) {
+  /* Optionally, you can add styles here to enhance the navbar layout for larger screens */
+  
+  .navbar-container {
+    /* For example, you might want to increase the width of the navbar container */
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Center the navbar horizontally */
+  }
+  
+  /* You might also want to adjust the padding or margins of the navbar items for better spacing */
+  .nav-item {
+    margin: 0 20px; /* Adjust as needed */
+  }
+  
+  /* Optionally, you can increase the font size of navbar items or change other styles */
+  .nav-links {
+    font-size: 16px; /* Adjust as needed */
+  }
+  
+  /* If your logo needs adjustment for larger screens, you can add styles here */
+  .nav-image {
+    width: 150px; /* Adjust as needed */
+  }
+}
+
+
+/* For large devices (desktops) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .navbar-container {
+    justify-content: space-between; /* Adjust alignment for better spacing */
+  }
+
+  .left-side, .right-side {
+    display: flex; /* Ensure left and right side elements are displayed */
+  }
+
+  .middle {
+    margin-top: 0; /* Reset margin */
+  }
+
+  .nav-menu {
+    flex-direction: row; /* Ensure menu items are displayed horizontally */
+  }
+
+  .nav-item {
+    margin: 0 1rem; /* Adjust item spacing */
+  }
+}
+
+
+/* For medium devices (laptops) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .navbar-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .left-side, .right-side {
+    display: flex;
+  }
+
+  .middle {
+    margin-top: 0; /* Reset margin */
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: center;
+    flex: 1; /* Expand to fill remaining space */
+  }
+
+  .nav-item {
+    margin: 0 1rem; /* Adjust spacing */
+  }
+}
+
+
+/* For small devices (tablets: 576px to 767px) */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .nav-item {
+    margin: 0 10px; /* Adjust margin for menu items */
+  }
+
+  .logo-container {
+    display: none; /* Hide the logo for this range */
+  }
+}
+
+
+
+/* For small devices (phones) and extra small devices (up to 576px) */
+@media screen and (max-width: 576px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-item {
+    margin: 10px 0;
+  }
+}
+
+/* For small devices (tablets: 576px to 767px) */
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
