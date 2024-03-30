@@ -1,0 +1,108 @@
+.servicescontainer{
+    margin-top: 5rem;
+    color: var(--light--);
+    font-family: 'Anek Gujarati', sans-serif;
+}
+.heading{
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--light--);
+    font-family: 'Anek Gujarati', sans-serif;
+}
+
+.swiper{
+    width: 70%;
+    height: 80vh;
+    margin-top: 5rem;
+}
+.swiperslides{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 3rem !important;
+    background-color: var(--light--);
+    gap: 1rem;
+
+}
+.image{
+    width: 97%;
+    height: 40vh;
+    border-radius: 3rem;
+    overflow: hidden;
+    padding: 5px;
+}
+.image img{
+    object-fit: cover;
+    height: 100%;
+}
+.description{
+    background-color: var(--dark--);
+    height: 20vh;
+    margin: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 35px;
+    clip-path: polygon(53% 21%, 80% 16%, 100% 0, 100% 100%, 0 100%, 0 0, 25% 15%);
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem; 
+    margin-top: -4.8rem;
+    width: 86%;
+    margin-left: 5px; 
+
+}
+.websitename{
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: var(--light--);
+    font-weight: 500;
+    font-family: 'Anek Gujarati', sans-serif;
+    margin-top: 1.5rem;
+   
+}
+.logos{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: -0.5rem;
+}
+.logo{
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    border: none;
+    background-color: white;
+}
+.plusicon{
+    font-size: 35px;
+    color: black;
+    position: relative;
+    right:  35px;
+    background-color: var(--light--);
+    border-radius: 50%;
+}
+.movebotton{
+    border-radius: 50%;
+    width: 26%;
+    height: 22%;
+    border: none;
+    position: relative;
+    left: 80%;
+    top: -70px;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.activeSlide {
+    background-color: #f0f0f0; /* Change to the desired background color for the active slide */
+}
+
+.activeButton {
+    background-color: var(--green--); /* Change to the desired background color for the active button */
+}
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-coverflow {
+    border-radius: 5rem; /* Adjust the border radius as needed */
+}
