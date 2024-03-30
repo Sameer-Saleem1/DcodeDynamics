@@ -1,18 +1,26 @@
-import Websites from "./Components/Websites/Websites";
-import Tools from "./Components/Tools/Tools";
-import Navbar from "./Components/Navbar/Navbar";
-import Footer from "./Components/Footer/Footer";
-import "./App.css";
+// App.jsx
 
-function App() {
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar/Navbar";
+import LandingPage from "./LandingPage";
+import OrderNow from "./Components/OrderNow/OrderNow";
+
+const App = () => {
   return (
-    <>
-      <Navbar />
-      <Tools />
-      <Websites />
-      <Footer />
-    </>
+    <Router>
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<LandingPage />}></Route>
+          <Route path="/order" element={<OrderNow />} />
+          {/* <Route path="/tech" element={<Technology />} /> */}
+          {/* <Route path="/order" element={<Websites />} />
+          <Route path="/order" element={<Websites />} /> */}
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

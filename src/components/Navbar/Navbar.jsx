@@ -1,6 +1,7 @@
+// Navbar.jsx
 import React from "react";
 import { MdOutlineShoppingCart } from "react-icons/md";
-import "./Navbar.css";
+import "./Navbar.css"; // Importing App.css
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
