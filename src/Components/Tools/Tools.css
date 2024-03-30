@@ -55,7 +55,7 @@ body {
   width: 70px;
   height: 10px;
   background-color: var(--green--);
-  margin-left: 5.5rem;
+  margin-left: 5rem;
   border-radius: 50%;
   filter: blur(8px);
   margin-top: -2.5rem;

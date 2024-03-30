@@ -1,8 +1,7 @@
-// Navbar.jsx
-import React from 'react';
+import React from "react";
 import { MdOutlineShoppingCart } from "react-icons/md";
-// import { NavLink } from 'react-router-dom';
-import './Navbar.css'; // Importing App.css
+import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -12,33 +11,51 @@ const Navbar = () => {
           <div className="left-side">
             <ul className="nav-menu">
               <li className="nav-item">
-                <a href="#" className="nav-links">Our Team</a>
+                <Link to="/team" className="nav-links">
+                  Our Team
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-links">Services</a>
+                <Link to="/services" className="nav-links">
+                  Services
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-links">Technology</a>
+                <Link to="/tech" className="nav-links">
+                  Technology
+                </Link>
               </li>
             </ul>
           </div>
 
           <div className="middle">
-            <ul className='nav-menu'>
-              <li className='nav-item'><img src="src\assets\D-codeLogo.png" alt="Dynamics" className="nav-image" /></li>
+            <ul className="nav-menu">
+              <li className="nav-item">
+                <img
+                  src="src\assets\D-codeLogo.png"
+                  alt="Dynamics"
+                  className="nav-image"
+                />
+              </li>
             </ul>
           </div>
 
           <div className="right-side">
             <ul className="nav-menu">
               <li className="nav-item">
-                <a href="#" className="nav-links">Order Now</a>
+                <Link to="/order" className="nav-links">
+                  Order Now
+                </Link>
               </li>
               <li className="nav-item">
-                <a href="#" className="nav-links">Contact Us</a>
+                <Link to="/contact" className="nav-links">
+                  Contact Us
+                </Link>
               </li>
               <li className="nav-item icon">
-                <MdOutlineShoppingCart style={{ fontSize: "20px", marginRight: "1rem" }} />
+                <MdOutlineShoppingCart
+                  style={{ fontSize: "20px", marginRight: "1rem" }}
+                />
               </li>
             </ul>
           </div>

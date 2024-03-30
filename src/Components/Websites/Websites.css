@@ -1,13 +1,44 @@
 .website-container {
-  margin: 2rem;
+  margin: 2rem 2rem 0 2rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.website-container-heading {
+  margin-bottom: 1rem;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  margin-top: 4rem;
+  padding: 5px 35px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: var(--green--);
+  color: black;
+  font-weight: 600;
+  font-family: var(--Urbanist-font);
+  letter-spacing: 1px;
+  font-size: 18px;
+  transition: transform 0.2s linear;
+}
+
+.btn:hover {
+  transform: translateY(10%);
+}
 .website-container .website-card {
   width: auto;
   border: 2px solid white;
+  height: 320px;
   border-radius: 40px;
   /* padding: 10px; */
   display: grid;
@@ -18,9 +49,9 @@
 }
 
 .website-container .website-card .web-image {
-  width: 250px;
+  width: 220px;
   padding: 30px;
-  height: auto;
+  height: 150px;
   border-bottom: 2px solid white;
   display: flex;
   justify-content: center;
@@ -28,8 +59,9 @@
 }
 
 .website-container .website-card .web-image img {
-  width: 220px;
-  margin-top: 25px;
+  width: 100%;
+  margin-top: 2px;
+  object-fit: contain;
 }
 
 .website-container .website-card .web-desc {
@@ -41,21 +73,22 @@
 }
 
 .web-desc h2 {
-  font-size: 22px;
-  margin-top: 8px !important;
+  font-size: 20px;
+  margin-top: 2px !important;
   margin: 0;
   letter-spacing: 1px;
   text-align: center;
 }
 
 .web-desc p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   letter-spacing: 2px;
 }
 .web-desc .stars {
   margin: -10px 20px;
-  margin-bottom: 1  rem !important;
+  padding-bottom: 20px;
+  margin-bottom: 1 rem !important;
   display: flex;
   justify-content: space-between !important;
 }
@@ -63,16 +96,16 @@
 .star-color {
   color: var(--green--);
   padding: 0 !important;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .circle {
   position: absolute;
   background-color: #242424;
   bottom: -2.5rem;
-  left: 8rem;
-  width: 70px;
-  height: 70px;
+  left: 7rem;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   border: 2px solid white;
   display: flex;
@@ -80,6 +113,6 @@
   align-items: center;
 }
 .cart {
-  font-size: 30px;
+  font-size: 28px;
   color: var(--green--);
 }
