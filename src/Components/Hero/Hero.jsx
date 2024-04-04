@@ -13,7 +13,7 @@ const Hero = () => {
           <button className={styles.orderbutton}>Order Now</button>
           <p
             style={{
-              fontSize: "40px",
+              fontSize: "30px",
               color: "var(--light--)",
             }}
           >

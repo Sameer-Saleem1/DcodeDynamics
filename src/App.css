@@ -5,10 +5,8 @@
     --light--: #F8F7F4;
 }
 
-body{
-    background-color: var(--dark--);
-}
 .swiper-3d .swiper-slide-shadow-left,
 .swiper-3d .swiper-slide-shadow-right {
     border-radius: 3rem !important;
+    background-color: rgba(53, 50, 51, 0.4);
 }

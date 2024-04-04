@@ -108,32 +108,36 @@
     left: 200px; /* Adjust position as needed */
     top: 373px; /* Adjust position as needed */
 }
-.diagonaline2{
-    width: 300px;
-    height: 4px; /* Adjust thickness of the line */
-    background-color: var(--green--);
-    transform: rotate(39deg); /* Rotate the line */
-    position: relative;
-    left: 750px; /* Adjust position as needed */
-    top: 330px; /* Adjust position as needed */
-}
 .diagonaline1{
     width: 300px;
     height: 4px; /* Adjust thickness of the line */
     background-color: var(--green--);
-    transform: rotate(-41deg); /* Rotate the line */
+    transform: rotate(-40deg); /* Rotate the line */
     position: relative;
     left: 487px; /* Adjust position as needed */
-    top: 323px; /* Adjust position as needed */
+    top: 324px; /* Adjust position as needed */
 }
-.orderbutton {
-    padding: 15px 20px;
-    width: 200px; /* Adjusted button width for better reliability */
-    font-size: 25px;
-    font-weight: 600;
+.diagonaline2{
+    width: 300px;
+    height: 4px; /* Adjust thickness of the line */
     background-color: var(--green--);
-    color: var(--dark--);
-    border-radius: 10px;
-    border: none;
-    margin-bottom: 5rem;
+    transform: rotate(38deg); /* Rotate the line */
+    position: relative;
+    left: 750px; /* Adjust position as needed */
+    top: 325px; /* Adjust position as needed */
+}
+
+.orderbutton {
+  margin-top: 1rem;
+  padding: 5px 35px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: var(--green--);
+  color: black;
+  font-weight: 600;
+  font-family: var(--Urbanist-font);
+  letter-spacing: 1px;
+  font-size: 18px;
+  transition: transform 0.2s linear;
 }

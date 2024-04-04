@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import data from "./ServiceData";
 import styles from "./Service.module.css";
-import { LuArrowUpRight } from "react-icons/lu";
+import { HiArrowLongRight } from "react-icons/hi2";
 import { GoPlusCircle } from "react-icons/go";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -42,7 +42,7 @@ const Servicecard = () => {
               activeIndex === index ? styles.activeSlide : ""
             }`}
             style={{
-              height: "380px",
+              height: "350px",
               width: "300px",
             }}
           >
@@ -62,7 +62,7 @@ const Servicecard = () => {
                 activeIndex === index ? styles.activeButton : ""
               }`}
             >
-              <LuArrowUpRight />
+              <HiArrowLongRight className={styles.arrow} />
             </button>
           </SwiperSlide>
         ))}
