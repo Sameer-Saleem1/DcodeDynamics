@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
 import LandingPage from "./LandingPage";
 import OrderNow from "./Components/OrderNow/OrderNow";
+import Footer from "./Components/Footer/Footer";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           {/* <Route path="/order" element={<Websites />} />
           <Route path="/order" element={<Websites />} /> */}
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

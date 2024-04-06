@@ -104,7 +104,8 @@ body {
   left: 0;
   bottom: -3px;
   width: 100%;
-  border-bottom: 3px solid #2ff360;
+  border-radius: 20px;
+  border-bottom: 2px solid #2ff360;
 }
 
 /* For extra-large devices (large desktops) */
