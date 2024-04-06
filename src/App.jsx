@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import LandingPage from "./LandingPage";
 import OrderNow from "./Components/OrderNow/OrderNow";
 import Technology from "./Components/Technology/Technology";
+import Footer from "./Components/Footer/Footer";
 import "./App.css";
 
 const App = () => {

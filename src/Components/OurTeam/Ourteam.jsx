@@ -49,7 +49,7 @@ const Ourteam = () => {
                 <img className={styles.img1} src={ss} alt="" />
               </div>
             </div>
-            <p className={styles.des2} style={{ width: "65%" }}>
+            <p className={styles.des2} style={{ width: "50%" }}>
               Co-Founder, Full-Stack Developer & React Expert
             </p>
           </div>
@@ -66,7 +66,7 @@ const Ourteam = () => {
               Co-Founder, Front-end & Wordpress Developer
             </p>
           </div>
-          <p className={styles.text1} style={{ marginLeft: "2rem" }}>
+          <p className={styles.text1} style={{ marginLeft: "-1rem" }}>
             Aba Salat
           </p>
         </div>
