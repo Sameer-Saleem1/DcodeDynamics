@@ -1,12 +1,14 @@
 .maincontainer {
   display: flex;
-  gap: 2rem;
-  margin-top: 5rem;
+  gap: 1rem;
+  padding-top: 8rem;
   min-height: 100vh;
   color: var(--light--);
   font-family: "Anek Gujarati", sans-serif;
   flex-direction: column;
   align-items: center;
+  /* justify-content: center; */
+  margin-left: 4.5rem;
 }
 .cardcontainer {
   display: flex;
@@ -14,6 +16,7 @@
   flex-wrap: wrap;
   margin-left: 2rem;
   margin-right: 2rem;
+  margin-bottom: 5rem;
 }
 
 .card {

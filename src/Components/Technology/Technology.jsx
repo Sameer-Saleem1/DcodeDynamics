@@ -4,14 +4,14 @@ import data from "./Technologydata";
 
 const Technology = () => {
   const [expandedIndex, setExpandedIndex] = useState(null);
-  const [visibleItems, setVisibleItems] = useState(5); // Number of items to initially display
+  const [visibleItems, setVisibleItems] = useState(4); // Number of items to initially display
 
   const toggleExpand = (index) => {
     setExpandedIndex(index === expandedIndex ? null : index);
   };
 
   const handleLoadMore = () => {
-    setVisibleItems((prevVisibleItems) => prevVisibleItems + 5); // Increase the number of visible items
+    setVisibleItems((prevVisibleItems) => prevVisibleItems + 4); // Increase the number of visible items
   };
 
   return (

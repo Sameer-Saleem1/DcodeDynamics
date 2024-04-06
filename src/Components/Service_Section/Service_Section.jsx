@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import './Service_Section.css';
+import "./Service_Section.css";
 import { GoPlusCircle } from "react-icons/go";
 import { MdArrowOutward } from "react-icons/md";
 import { IoMdSearch } from "react-icons/io";
 import { TbFilterEdit } from "react-icons/tb";
 import data from "./ServiceData";
-import image from './img/card3.jpg';
+import image from "./img/card3.jpg";
 
 function Service_Section() {
   const [search, setSearch] = useState("");
@@ -33,7 +33,7 @@ function Service_Section() {
   };
 
   const filterData = (searchTerm) => {
-    const filtered = data.filter(item =>
+    const filtered = data.filter((item) =>
       item.title.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setFilteredData(filtered);
@@ -48,7 +48,7 @@ function Service_Section() {
   };
 
   return (
-    <>
+    <div style={{ paddingTop: "6rem" }}>
       <div className="search">
         <div className="search-icon">
           <IoMdSearch />
@@ -57,9 +57,9 @@ function Service_Section() {
         <div className="search-bar">
           <input placeholder="Search" onChange={handleChange}></input>
         </div>
-        <div className="filter">
+        {/* <div className="filter">
           <TbFilterEdit className="filter-icon" />
-        </div>
+        </div> */}
       </div>
 
       {showOriginal && renderOriginalData()}
@@ -69,11 +69,16 @@ function Service_Section() {
           <div className="heading">
             <h1>Search Results</h1>
           </div>
-          {filteredData.length > 0 ? renderFilteredData() : <p>No results found</p>}
+          {filteredData.length > 0 ? (
+            renderFilteredData()
+          ) : (
+            <p style={{ textAlign: "center", color: "#2ff360" }}>
+              No results found
+            </p>
+          )}
         </>
       )}
-
-    </>
+    </div>
   );
 
   function renderOriginalData() {
@@ -83,32 +88,37 @@ function Service_Section() {
           <h1>Web Development</h1>
         </div>
         <div className="cardcontainer">
-          {data.slice(0, showAllDevelopment ? data.length : 8).map((item, index) => (
-            <div key={item.title} className="card">
-              <div className="left">
-                <img className="image" src={image} alt="" />
-              </div>
-              <div className="right">
-                <div className="description">
-                  <h1 className="websitename">{item.title}</h1>
-                  <div className="logos">
-                    <div className="logo"></div>
-                    <div className="logo"></div>
-                    <div className="logo"></div>
-                    <div className="logo"></div>
-                    <GoPlusCircle className="plusicon" />
-                  </div>
+          {data
+            .slice(0, showAllDevelopment ? data.length : 8)
+            .map((item, index) => (
+              <div key={item.title} className="card">
+                <div className="left">
+                  <img className="image" src={image} alt="" />
                 </div>
-                <button className="movebotton">
-                  <MdArrowOutward />
-                </button>
+                <div className="right">
+                  <div className="description">
+                    <h1 className="websitename">{item.title}</h1>
+                    <div className="logos">
+                      <div className="logo"></div>
+                      <div className="logo"></div>
+                      <div className="logo"></div>
+                      <div className="logo"></div>
+                      <GoPlusCircle className="plusicon" />
+                    </div>
+                  </div>
+                  <button className="movebotton">
+                    <MdArrowOutward />
+                  </button>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
         </div>
         {!showAllDevelopment && (
           <div className="loadMoreButtonContainer">
-            <button className="loadMoreButton" onClick={toggleShowAllDevelopment}>
+            <button
+              className="loadMoreButton"
+              onClick={toggleShowAllDevelopment}
+            >
               Load More
             </button>
           </div>
