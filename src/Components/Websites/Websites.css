@@ -23,6 +23,7 @@
   letter-spacing: 1px;
   font-size: 18px;
   transition: transform 0.2s linear;
+  cursor: pointer;
 }
 
 .btn:hover {
