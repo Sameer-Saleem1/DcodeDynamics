@@ -4,7 +4,6 @@ import { GoPlusCircle } from "react-icons/go";
 import { MdArrowOutward } from "react-icons/md";
 import { IoMdSearch } from "react-icons/io";
 import { TbFilterEdit } from "react-icons/tb";
-import Footer from "../Footer/Footer";
 import data from "./ServiceData";
 import image from './img/card3.jpg';
 
@@ -74,7 +73,6 @@ function Service_Section() {
         </>
       )}
 
-      <Footer />
     </>
   );
 

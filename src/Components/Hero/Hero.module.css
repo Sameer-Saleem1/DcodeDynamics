@@ -1,0 +1,96 @@
+.main {
+  /* min-height: 100vh; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Anek Gujarati", sans-serif; /* Font fallback */
+  color: var(--green--);
+  padding-top: 6rem;
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+  line-height: 0px;
+  margin-top: 0rem;
+}
+
+.right {
+  width: 50%;
+  display: flex;
+  justify-content: start;
+  margin-top: 0rem;
+}
+
+.ploygon3 {
+  margin-top: 2.5rem;
+}
+.ploygon4 {
+  margin-top: -2rem;
+}
+.ploygon2 {
+  margin-top: 7rem;
+}
+
+.ploygon {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  width: 110px;
+  height: 95px;
+  background-color: var(--green--);
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.ploygon1 {
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+  width: 170px;
+  background-color: var(--dark--);
+  height: 100px;
+}
+
+.heading {
+  font-size: 45px;
+  letter-spacing: 3px;
+}
+
+.text {
+  color: var(--light--);
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.orderbutton {
+  padding: 5px 35px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: var(--green--);
+  color: black;
+  font-weight: 600;
+  font-family: var(--Urbanist-font);
+  letter-spacing: 1px;
+  font-size: 18px;
+  transition: transform 0.2s linear;
+  cursor: pointer;
+}
+.orderbutton:hover {
+  transform: translateY(10%);
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.services {
+  font-size: 25px;
+  font-weight: 400;
+  margin-top: 0.2rem;
+  cursor: pointer;
+}

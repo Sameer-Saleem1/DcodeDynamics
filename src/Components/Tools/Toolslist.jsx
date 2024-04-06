@@ -55,6 +55,10 @@ const list = [
     name: "HTML",
     img: html,
   },
+  {
+    name: "Redux",
+    img: html,
+  },
 ];
 
 export default list;

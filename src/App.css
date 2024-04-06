@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Anek+Gujarati&display=swap");
+:root{
+    --green--: #2FF360;
+    --dark--: #242122;
+    --light--: #F8F7F4;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+    border-radius: 3rem !important;
+    background-color: rgba(53, 50, 51, 0.4);
+}

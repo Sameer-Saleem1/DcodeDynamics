@@ -40,7 +40,7 @@ function Tools() {
         >
           {list.map((list) => (
             <div className="octagon-container">
-              <ToolsCard key={list.name} name={list.name} img={list.img} />
+              <ToolsCard key={list.img} name={list.name} img={list.img} />
             </div>
           ))}
         </Carousel>

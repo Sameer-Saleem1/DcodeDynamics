@@ -1,0 +1,139 @@
+.maincontainer {
+  color: var(--light--);
+  font-family: "Anek Gujarati", sans-serif;
+}
+.heading {
+  font-size: 50px;
+  font-weight: 600;
+}
+.polygon {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  height: 137px;
+  width: 120px;
+  background-color: var(--green--);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.polygon1 {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  background-color: var(--dark--);
+  height: 125px;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img1 {
+  width: 100px;
+  height: 115px;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  background-color: var(--dark--);
+}
+.img1 img {
+  object-fit: cover;
+}
+
+.first {
+  display: flex;
+}
+
+.first > div {
+  margin-left: 7rem;
+}
+.firstleft {
+  width: 35%;
+}
+.firstright {
+  width: 57.5%;
+}
+.mainpolygon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: -1.5rem;
+}
+.des1 {
+  font-size: 22px;
+  width: 60%;
+  line-height: 25px;
+}
+
+.text {
+  font-size: 28px;
+  color: var(--green--);
+  margin-bottom: 0.5rem;
+  margin-left: -3.8rem;
+}
+
+.second {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.secondleft {
+  width: 55%;
+  margin-left: 24rem;
+}
+
+.secondright {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin-left: 2rem;
+}
+
+.text1 {
+  font-size: 30px;
+  color: var(--green--);
+  margin-top: 0.5rem;
+  margin-left: -3rem;
+}
+.des2 {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.diagonaline {
+  width: 310px;
+  height: 4px; /* Adjust thickness of the line */
+  background-color: var(--green--);
+  transform: rotate(44deg); /* Rotate the line */
+  position: relative;
+  left: 120px; /* Adjust position as needed */
+  top: 337px; /* Adjust position as needed */
+}
+.diagonaline1 {
+  width: 300px;
+  height: 4px; /* Adjust thickness of the line */
+  background-color: var(--green--);
+  transform: rotate(-45deg); /* Rotate the line */
+  position: relative;
+  left: 425px; /* Adjust position as needed */
+  top: 323px; /* Adjust position as needed */
+}
+.diagonaline2 {
+  width: 300px;
+  height: 4px; /* Adjust thickness of the line */
+  background-color: var(--green--);
+  transform: rotate(43deg); /* Rotate the line */
+  position: relative;
+  left: 660px; /* Adjust position as needed */
+  top: 325px; /* Adjust position as needed */
+}
+
+.orderbutton {
+  margin-top: 1rem;
+  padding: 5px 35px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  background-color: var(--green--);
+  color: black;
+  font-weight: 600;
+  font-family: var(--Urbanist-font);
+  letter-spacing: 1px;
+  font-size: 18px;
+  transition: transform 0.2s linear;
+}

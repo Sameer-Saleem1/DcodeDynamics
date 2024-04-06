@@ -32,11 +32,11 @@ const Navbar = () => {
           <div className="middle">
             <ul className="nav-menu">
               <li className="nav-item">
-                <img
+                <Link to={'./'}><img
                   src="src\assets\D-codeLogo.png"
                   alt="Dynamics"
                   className="nav-image"
-                />
+                /></Link>
               </li>
             </ul>
           </div>

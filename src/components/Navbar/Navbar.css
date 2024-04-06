@@ -22,11 +22,13 @@ body {
 }
 
 .navbar {
-  background-color: transparent;
+  background-color: #242424;
+  z-index: 399;
   display: flex;
   align-items: center;
-  /* height: 80px; */
+  height: 80px;
   width: 100%;
+  position: fixed;
 }
 
 .navbar-container {
@@ -55,7 +57,7 @@ body {
 .nav-links {
   color: #f8f7f4;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .nav-image {
@@ -104,7 +106,8 @@ body {
   left: 0;
   bottom: -3px;
   width: 100%;
-  border-bottom: 3px solid #2ff360;
+  border-radius: 20px;
+  border-bottom: 2px solid #2ff360;
 }
 
 /* For extra-large devices (large desktops) */

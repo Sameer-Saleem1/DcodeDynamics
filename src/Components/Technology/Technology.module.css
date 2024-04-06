@@ -1,0 +1,140 @@
+.maincontainer {
+  display: flex;
+  gap: 2rem;
+  margin-top: 5rem;
+  min-height: 100vh;
+  color: var(--light--);
+  font-family: "Anek Gujarati", sans-serif;
+  flex-direction: column;
+  align-items: center;
+}
+.cardcontainer {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.card {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardexpand {
+  height: auto;
+  transform: scale(1.05);
+  transition: ease-in 0.4s;
+}
+
+.image {
+  width: 150px;
+  cursor: pointer;
+  position: relative;
+}
+
+.image:hover .triangle {
+  transform: rotate(180deg);
+  transition: 0.5s ease-in;
+  background-color: var(--green--);
+}
+.image img {
+  border-radius: 30px;
+  width: 150px;
+  object-fit: cover;
+  border: 2px var(--green--) solid;
+}
+
+.image:hover {
+  transform: scale(1.05);
+  transition: ease-in-out 0.2s;
+}
+.expandedImage:hover {
+  transform: none; /* Remove the scale transformation */
+  transition: none; /* Remove the transition effect */
+}
+.trianglecontainer {
+  width: 35px;
+  height: 35px;
+  background-color: var(--light--);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -10px;
+  left: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px var(--green--) solid;
+}
+
+.triangle {
+  width: 15px;
+  height: 15px;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: var(--dark--);
+}
+.triangle1 {
+  background-color: var(--green--);
+  transform: rotate(180deg);
+}
+.textcontaier {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box; /* Include padding in width calculation */
+  animation: slideIn 1s ease forwards;
+}
+.text {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  width: 85%;
+}
+.loadmore {
+  background-color: var(--green--);
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 5px 35px;
+  border: none;
+  color: var(--dark--);
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: transform 0.2s linear;
+  cursor: pointer;
+}
+
+.loadmore:hover {
+  transform: translateY(10%);
+}
+
+@keyframes expand {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.1;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+/* Add this CSS code to your stylesheet */
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.textContainer {
+  animation: slideIn 0.5s ease forwards; /* Apply the animation to the text container */
+}
