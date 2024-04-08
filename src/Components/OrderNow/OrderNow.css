@@ -51,7 +51,7 @@
 .search-bar input::placeholder {
   color: rgb(186, 186, 186);
 }
-
+/* 
 .filter {
   width: 50px;
   border-top-right-radius: 30px;
@@ -72,7 +72,7 @@
 
 .filter-icon:hover {
   color: white;
-}
+} */
 
 .OrderNow-container marquee {
   display: flex;
@@ -91,6 +91,7 @@
 
 .button-container {
   display: flex;
+  flex-wrap: wrap;
   margin: 2rem 0;
 }
 
@@ -131,42 +132,67 @@
   width: 25px;
 }
 
-.modal,
-.overlay {
-  height: 100%;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  position: fixed;
-  z-index: 10;
-}
+/*------------------------------------ Responsive CSS  ----------------------------------*/
 
-.overlay {
-  background-color: rgba(49, 49, 49, 0.6);
-}
+@media screen and (max-width: 768px) {
+  .OrderNow-container {
+    margin: 0 0.5rem;
+    padding-top: 0.5rem;
+  }
+  .search {
+    margin-left: 25px !important;
+    height: 30px;
+    width: 100%;
+  }
+  .search-bar input {
+    width: 270px !important;
+    font-size: 12px;
+  }
+  .search-icon hr {
+    height: 30px !important;
+  }
 
-.modal-content {
-  color: black;
-  padding: 10px;
-  position: absolute;
-  left: 50%;
-  top: 40%;
-  transform: translate(-50%, -50%);
-  line-height: 1.4;
-  background-color: #f8f7f4;
-  border-radius: 5px;
-  z-index: 11;
-  max-width: 600px;
-  min-width: 300px;
-}
+  .button-container-center {
+    margin-top: 1rem;
+  }
 
-.close-modal {
-  font-size: 30px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 5px 7px;
-  z-index: 11;
-  cursor: pointer;
+  .OrderNow-container marquee {
+    display: flex;
+    margin: 1rem 0;
+    padding: 0.5rem;
+    width: 95%;
+    height: auto;
+  }
+
+  .marquee-image {
+    height: 120px !important;
+  }
+
+  .button-container {
+    margin: 0 0 1rem 0.5rem;
+    display: flex;
+  }
+
+  .button-container button {
+    font-size: 12px;
+    align-items: center;
+    padding: 0 5px;
+    margin: 5px;
+  }
+
+  .button-container button p {
+    margin: 8px;
+    margin-left: 10px !important;
+    text-decoration: none;
+  }
+
+  .button-container button img {
+    width: 20px;
+  }
+
+  .viewMore.btn {
+    margin: 2rem !important;
+    padding: 2px 20px;
+    font-size: 16px;
+  }
 }

@@ -9,7 +9,7 @@ import Servicecard from "./Components/Services/Servicecard";
 
 function LandingPage() {
   return (
-    <div >
+    <div>
       <Hero></Hero>
       <Tools />
       <Servicecard />
