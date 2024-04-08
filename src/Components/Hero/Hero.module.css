@@ -93,4 +93,6 @@
   font-weight: 400;
   margin-top: 0.2rem;
   cursor: pointer;
+  text-decoration: none;
+  color: var(--green--);
 }

@@ -3,7 +3,7 @@
   font-family: "Anek Gujarati", sans-serif;
 }
 .heading {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 600;
   color: var(--light--);
   font-family: "Anek Gujarati", sans-serif;
@@ -18,12 +18,12 @@
   border-radius: 3rem !important;
   background-color: var(--light--);
   box-sizing: content-box;
+  padding: 4px;
 }
 .image {
-  width: 97%;
-  height: 260px;
+  width: 100%;
+  height: 240px;
   border-radius: 3rem;
-  padding: 5px;
 }
 .image img {
   object-fit: contain;
@@ -31,7 +31,6 @@
 .description {
   background-color: var(--dark--);
   height: 150px;
-  margin: 7px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -39,9 +38,7 @@
   clip-path: polygon(53% 21%, 80% 16%, 100% 0, 100% 100%, 0 100%, 0 0, 25% 15%);
   border-bottom-left-radius: 3rem;
   border-bottom-right-radius: 3rem;
-  width: 86%;
-  margin-top: -5.25rem;
-  margin-left: 5px;
+  margin-top: -3.03rem;
 }
 .websitename {
   font-size: 25px;
@@ -73,16 +70,17 @@
 }
 .movebotton {
   border-radius: 50%;
-  width: 24%;
-  height: 22%;
+  width: 23%;
+  height: 20%;
   border: none;
   position: relative;
-  left: 80%;
-  top: -70px;
+  left: 83%;
+  top: -60px;
   font-size: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .arrow {
   font-size: 55px;

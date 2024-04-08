@@ -8,10 +8,6 @@ import ss from "./img/SS.jpg";
 const Ourteam = () => {
   return (
     <div className={styles.maincontainer}>
-      <div className={styles.diagonaline}></div>
-      <div className={styles.diagonaline1}></div>
-      <div className={styles.diagonaline2}></div>
-
       <center className={styles.heading}>Our Team</center>
       <div className={styles.first}>
         <div className={styles.firstleft}>
@@ -22,12 +18,10 @@ const Ourteam = () => {
                 <img className={styles.img1} src={h} alt="" />
               </div>
             </div>
-            <p className={styles.des1} style={{ width: "45%" }}>
-              Founder, CEO & UI/UX Designer
-            </p>
           </div>
+          <p className={styles.des1}>Founder, CEO & UI/UX Designer</p>
         </div>
-        <div className={styles.firstright}>
+        <div className={styles.firstleft}>
           <p className={styles.text}>Huzaifa Shaikh</p>
           <div className={styles.mainpolygon}>
             <div className={styles.polygon}>
@@ -35,39 +29,35 @@ const Ourteam = () => {
                 <img className={styles.img1} src={hs} alt="" />
               </div>
             </div>
-            <p className={styles.des1}>
-              Co-Founder, Back-end Developer & Machine Learning Enthusiast
-            </p>
           </div>
+          <p className={styles.des1}>
+            Co-Founder, Back-end Developer & Machine Learning Enthusiast
+          </p>
         </div>
-      </div>
-      <div className={styles.second}>
-        <div className={styles.secondleft}>
+        <div className={styles.firstleft}>
+          <p className={styles.text}>Sameer Saleem</p>
           <div className={styles.mainpolygon}>
             <div className={styles.polygon}>
               <div className={styles.polygon1}>
                 <img className={styles.img1} src={ss} alt="" />
               </div>
             </div>
-            <p className={styles.des2} style={{ width: "50%" }}>
-              Co-Founder, Full-Stack Developer & React Expert
-            </p>
           </div>
-          <p className={styles.text1}>Sameer Saleem</p>
+          <p className={styles.des1}>
+            Co-Founder, Full-Stack Developer & React Expert
+          </p>
         </div>
-        <div className={styles.secondright}>
+        <div className={styles.firstleft}>
+          <p className={styles.text}>Aba Salat</p>
           <div className={styles.mainpolygon}>
             <div className={styles.polygon}>
               <div className={styles.polygon1}>
                 <img className={styles.img1} src={As} alt="" />
               </div>
             </div>
-            <p className={styles.des2} style={{ width: "60%" }}>
-              Co-Founder, Front-end & Wordpress Developer
-            </p>
           </div>
-          <p className={styles.text1} style={{ marginLeft: "-1rem" }}>
-            Aba Salat
+          <p className={styles.des1}>
+            Co-Founder, Front-end & Wordpress Developer
           </p>
         </div>
       </div>

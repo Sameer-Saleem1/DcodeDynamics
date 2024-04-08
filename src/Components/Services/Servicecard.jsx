@@ -7,6 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import { EffectCoverflow } from "swiper/modules";
+import { Link } from "react-router-dom";
 
 const Servicecard = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -57,13 +58,15 @@ const Servicecard = () => {
                 <GoPlusCircle className={styles.plusicon} />
               </div>
             </div>
-            <button
-              className={`${styles.movebotton} ${
-                activeIndex === index ? styles.activeButton : ""
-              }`}
-            >
-              <HiArrowLongRight className={styles.arrow} />
-            </button>
+            <Link to={"./services"}>
+              <button
+                className={`${styles.movebotton} ${
+                  activeIndex === index ? styles.activeButton : ""
+                }`}
+              >
+                <HiArrowLongRight className={styles.arrow} />
+              </button>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>

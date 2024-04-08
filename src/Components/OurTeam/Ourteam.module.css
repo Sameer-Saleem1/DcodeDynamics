@@ -3,7 +3,7 @@
   font-family: "Anek Gujarati", sans-serif;
 }
 .heading {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 600;
 }
 .polygon {
@@ -36,96 +36,36 @@
 
 .first {
   display: flex;
+  justify-content: space-evenly;
 }
 
-.first > div {
-  margin-left: 7rem;
-}
 .firstleft {
-  width: 35%;
-}
-.firstright {
-  width: 57.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
 }
 .mainpolygon {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-left: -1.5rem;
 }
 .des1 {
-  font-size: 22px;
-  width: 60%;
+  font-size: 20px;
   line-height: 25px;
+  width: 80%;
+  text-align: center;
 }
 
 .text {
-  font-size: 28px;
+  font-size: 25px;
   color: var(--green--);
   margin-bottom: 0.5rem;
-  margin-left: -3.8rem;
 }
 
-.second {
-  margin-top: 5rem;
-  display: flex;
-  justify-content: center;
-}
-
-.secondleft {
-  width: 55%;
-  margin-left: 24rem;
-}
-
-.secondright {
-  display: flex;
-  flex-direction: column;
-  width: 45%;
-  margin-left: 2rem;
-}
-
-.text1 {
-  font-size: 30px;
-  color: var(--green--);
-  margin-top: 0.5rem;
-  margin-left: -3rem;
-}
-.des2 {
-  font-size: 22px;
-  line-height: 30px;
-}
-
-.diagonaline {
-  width: 310px;
-  height: 4px; /* Adjust thickness of the line */
-  background-color: var(--green--);
-  transform: rotate(44deg); /* Rotate the line */
-  position: relative;
-  left: 120px; /* Adjust position as needed */
-  top: 337px; /* Adjust position as needed */
-}
-.diagonaline1 {
-  width: 300px;
-  height: 4px; /* Adjust thickness of the line */
-  background-color: var(--green--);
-  transform: rotate(-45deg); /* Rotate the line */
-  position: relative;
-  left: 425px; /* Adjust position as needed */
-  top: 323px; /* Adjust position as needed */
-}
-.diagonaline2 {
-  width: 300px;
-  height: 4px; /* Adjust thickness of the line */
-  background-color: var(--green--);
-  transform: rotate(43deg); /* Rotate the line */
-  position: relative;
-  left: 660px; /* Adjust position as needed */
-  top: 325px; /* Adjust position as needed */
-}
 
 .orderbutton {
   margin-top: 1rem;
-  padding: 5px 35px;
+  padding: 5px 30px;
   border-radius: 10px;
   outline: none;
   border: none;

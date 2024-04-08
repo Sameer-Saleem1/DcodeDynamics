@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Hero.module.css";
+import { Link } from "react-router-dom";
 const Hero = () => {
   return (
     <div className={styles.main}>
@@ -10,7 +11,9 @@ const Hero = () => {
           Your Partner in Digital Innovation and Growth
         </p>
         <div className={styles.buttons}>
-          <button className={styles.orderbutton}>Order Now</button>
+          <Link to={"./order"}>
+            <button className={styles.orderbutton}>Order Now</button>
+          </Link>
           <p
             style={{
               fontSize: "30px",
@@ -19,7 +22,9 @@ const Hero = () => {
           >
             or
           </p>
-          <a className={styles.services}>View Services</a>
+          <Link to={"./services"} className={styles.services}>
+            <a>View Services</a>
+          </Link>
         </div>
       </div>
       <div className={styles.right}>
