@@ -77,3 +77,21 @@
   font-size: 18px;
   transition: transform 0.2s linear;
 }
+
+@media screen and (max-width: 768px) {
+  .maincontainer{
+    margin-top: 3rem;
+  }
+  .first {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+  
+  .firstleft {
+    width: 100%; /* Make the left column full width on smaller screens */
+    margin-bottom: 20px; /* Add space between the left column and the rest */
+  }
+  
+  .des1 {
+    width: 60%; /* Make the description text full width on smaller screens */
+  }
+}

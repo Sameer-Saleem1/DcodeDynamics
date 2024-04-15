@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import data from "./ServiceData";
 import styles from "./Service.module.css";
 import { HiArrowLongRight } from "react-icons/hi2";
@@ -10,8 +10,8 @@ import { EffectCoverflow } from "swiper/modules";
 import { Link } from "react-router-dom";
 
 const Servicecard = () => {
+  // const isMobile = window.innerWidth <= 768; //slidesPerView={`${isMobile === true ? 1 : 3}`}
   const [activeIndex, setActiveIndex] = useState(0);
-
   const handleSlideChange = (swiper) => {
     setActiveIndex(swiper.realIndex);
   };
@@ -26,13 +26,13 @@ const Servicecard = () => {
         loop={true}
         modules={[EffectCoverflow]}
         spaceBetween={50}
-        slidesPerView={3}
+        slidesPerView={"auto"}
         onSlideChange={(swiper) => handleSlideChange(swiper)}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
           depth: 100,
-          modifier: 2.5,
+          modifier: 4,
         }}
         className={styles.swiper}
       >
@@ -43,7 +43,7 @@ const Servicecard = () => {
               activeIndex === index ? styles.activeSlide : ""
             }`}
             style={{
-              height: "350px",
+              height: "325px",
               width: "300px",
             }}
           >

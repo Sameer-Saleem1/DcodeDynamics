@@ -9,17 +9,6 @@
   font-family: "Anek Gujarati", sans-serif;
 }
 
-.swiper {
-  width: 80%;
-  height: 70vh;
-  margin-top: 5rem;
-}
-.swiperslides {
-  border-radius: 3rem !important;
-  background-color: var(--light--);
-  box-sizing: content-box;
-  padding: 4px;
-}
 .image {
   width: 100%;
   height: 240px;
@@ -38,7 +27,7 @@
   clip-path: polygon(53% 21%, 80% 16%, 100% 0, 100% 100%, 0 100%, 0 0, 25% 15%);
   border-bottom-left-radius: 3rem;
   border-bottom-right-radius: 3rem;
-  margin-top: -3.03rem;
+  margin-top: -4.55rem;
 }
 .websitename {
   font-size: 25px;
@@ -71,7 +60,7 @@
 .movebotton {
   border-radius: 50%;
   width: 23%;
-  height: 20%;
+  height: 21%;
   border: none;
   position: relative;
   left: 83%;
@@ -95,4 +84,14 @@
   background-color: var(
     --green--
   ); /* Change to the desired background color for the active button */
+}
+
+@media screen and (max-width: 768px) {
+  .movebotton {
+    width: 22%;
+    height: 20%;
+  }
+  .arrow {
+    font-size: 50px;
+  }
 }

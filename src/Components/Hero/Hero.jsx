@@ -23,7 +23,7 @@ const Hero = () => {
             or
           </p>
           <Link to={"./services"} className={styles.services}>
-            <a>View Services</a>
+            <p>View Services</p>
           </Link>
         </div>
       </div>
