@@ -24,7 +24,7 @@ function WebsitesCard({ name, img }) {
             <p>$25</p>
           </div>
 
-          <div className="circle">
+          <div className="cartCircle">
             <MdOutlineAddShoppingCart className="cart" />
           </div>
         </div>

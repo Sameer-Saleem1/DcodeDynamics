@@ -14,8 +14,10 @@ import salat from "../Tools/img/salat.jpeg";
 import chacha from "../Tools/img/chacha.jpeg";
 
 function OrderNow() {
+  const isMobile = window.innerWidth <= 768;
+
   const [search, setSearch] = useState("");
-  const [visibleItems, setVisibleItems] = useState(3); // Initial number of visible items
+  const [visibleItems, setVisibleItems] = useState(isMobile === true ? 1 : 3); // Initial number of visible items
   const [filteredData, setFilteredData] = useState(data); // State to store filtered data
   const [selectedCategory, setSelectedCategory] = useState(""); // State to track the selected category
 
@@ -39,7 +41,9 @@ function OrderNow() {
 
   const handleLoadMore = () => {
     // Increase the number of visible items by a certain amount when "Load More" button is clicked
-    setVisibleItems((prevVisibleItems) => prevVisibleItems + 3);
+    isMobile === true
+      ? setVisibleItems((prevVisibleItems) => prevVisibleItems + 1)
+      : setVisibleItems((prevVisibleItems) => prevVisibleItems + 3);
   };
 
   return (
@@ -78,6 +82,7 @@ function OrderNow() {
               src={haseeb}
               alt=""
               style={{ width: "150px", marginRight: "1.5rem", height: "200px" }}
+              className="marquee-image"
             />
             <img
               src={chacha}
@@ -88,16 +93,19 @@ function OrderNow() {
                 height: "200px",
                 objectFit: "cover",
               }}
+              className="marquee-image"
             />
             <img
               src={sameer}
               alt=""
               style={{ width: "150px", marginRight: "1.5rem", height: "200px" }}
+              className="marquee-image"
             />
             <img
               src={salat}
               alt=""
               style={{ width: "150px", height: "200px" }}
+              className="marquee-image"
             />
           </marquee>
 
@@ -152,7 +160,7 @@ function OrderNow() {
         </div>
 
         {visibleItems < filteredData.length && (
-          <button className="btn" onClick={handleLoadMore}>
+          <button className="viewMore btn" onClick={handleLoadMore}>
             View More
           </button>
         )}
