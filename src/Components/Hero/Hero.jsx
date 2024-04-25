@@ -15,6 +15,7 @@ const Hero = () => {
             <button className={styles.orderbutton}>Order Now</button>
           </Link>
           <p
+            className={styles.or}
             style={{
               fontSize: "30px",
               color: "var(--light--)",

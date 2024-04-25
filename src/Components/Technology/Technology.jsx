@@ -1,18 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Technology.module.css";
 import data from "./Technologydata";
 
 const Technology = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [expandedIndex, setExpandedIndex] = useState(null);
-  const [visibleItems, setVisibleItems] = useState(4); // Number of items to initially display
+  const [visibleItems, setVisibleItems] = useState(isMobile ? 2 : 5);
 
   const toggleExpand = (index) => {
     setExpandedIndex(index === expandedIndex ? null : index);
   };
 
   const handleLoadMore = () => {
-    setVisibleItems((prevVisibleItems) => prevVisibleItems + 4); // Increase the number of visible items
+    setVisibleItems(
+      (prevVisibleItems) => prevVisibleItems + (isMobile ? 2 : 5)
+    );
   };
+  // Add event listener to update isMobile state
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div className={styles.maincontainer}>

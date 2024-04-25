@@ -8,19 +8,18 @@
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
-  margin-left: 4.5rem;
 }
 .cardcontainer {
   display: flex;
-  gap: 2rem;
   flex-wrap: wrap;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  justify-content: center;
+  gap: 1.5rem;
   margin-bottom: 5rem;
+  width: 90%;
 }
 
 .card {
-  width: 230px;
+  width: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,7 +44,7 @@
 }
 .image img {
   border-radius: 30px;
-  width: 150px;
+  width: 130px;
   object-fit: cover;
   border: 2px var(--green--) solid;
 }
@@ -65,7 +64,7 @@
   border-radius: 50%;
   position: absolute;
   bottom: -10px;
-  left: 55px;
+  left: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,7 +93,7 @@
   font-size: 20px;
   color: white;
   text-align: center;
-  width: 85%;
+  width: 90%;
 }
 .loadmore {
   background-color: var(--green--);
@@ -140,4 +139,36 @@
 
 .textContainer {
   animation: slideIn 0.5s ease forwards; /* Apply the animation to the text container */
+}
+
+@media screen and (max-width: 768px) {
+  .maincontainer{
+    margin: 0;
+    margin-bottom: 3rem;
+  }
+}
+
+
+@media screen and (max-width: 1260px)  and (min-width: 1024px) {
+
+  .cardcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+  }
+  .card {
+    width: 170px;
+    
+  }
+  .image {
+    width: 130px;
+  }
+  .image img {
+    width: 130px;
+  }
+  .trianglecontainer {
+    left: 50px;
+  }
 }
