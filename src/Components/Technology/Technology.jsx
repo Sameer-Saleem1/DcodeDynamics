@@ -3,7 +3,7 @@ import styles from "./Technology.module.css";
 import data from "./Technologydata";
 
 const Technology = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 425);
   const [expandedIndex, setExpandedIndex] = useState(null);
   const [visibleItems, setVisibleItems] = useState(isMobile ? 2 : 5);
 
@@ -19,7 +19,7 @@ const Technology = () => {
   // Add event listener to update isMobile state
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
+      setIsMobile(window.innerWidth <= 425);
     };
 
     window.addEventListener("resize", handleResize);

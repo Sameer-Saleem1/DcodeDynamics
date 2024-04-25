@@ -12,10 +12,11 @@
 .cardcontainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
   gap: 1.5rem;
   margin-bottom: 5rem;
   width: 90%;
+  margin-left: 4rem;
 }
 
 .card {
@@ -145,16 +146,34 @@
   .maincontainer{
     margin: 0;
     margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+  }
+  .cardcontainer {
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .maincontainer{
+    margin: 0;
+    margin-bottom: 3rem;
+    padding-left: 0rem;
+  }
+  .cardcontainer {
+    display: flex;
+    margin-left: 0%;
+    justify-content: center;
   }
 }
 
 
-@media screen and (max-width: 1260px)  and (min-width: 1024px) {
+@media screen and (max-width: 1260px)  and (min-width: 768px) {
 
   .cardcontainer {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     width: 100%;
     gap: 2rem;
   }
