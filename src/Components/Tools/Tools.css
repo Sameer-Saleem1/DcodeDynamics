@@ -52,7 +52,7 @@ body {
 .octagon img {
   rotate: -20deg;
   object-fit: contain;
-  width: 100px;
+  width: 160px;
 }
 .shadow {
   width: 70px;
@@ -80,10 +80,103 @@ body {
 }
 .react-multiple-carousel__arrow--left {
   top: 110px;
-  left:20px !important;
+  left: 20px !important;
   background-color: transparent !important;
 }
 .react-multiple-carousel__arrow--left::before {
   color: var(--green--) !important;
   font-weight: 900 !important;
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 320px) {
+  .tools-container {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .tools-container h1 {
+    font-size: 35px;
+    letter-spacing: 1px;
+  }
+
+  .octagon-container {
+    margin: 1rem 0.75rem;
+  }
+
+  .octagon-container h3 {
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+
+  .octagon {
+    margin: 60px 40px 60px 75px;
+  }
+
+  .shadow {
+    margin-left: 6rem;
+    border-radius: 50%;
+    filter: blur(8px);
+    margin-top: -2.5rem;
+  }
+
+  .octagon-main-container {
+    margin-top: 0;
+    padding: 0 2.5rem;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  .octagon {
+    margin: 60px 0px 60px 100px;
+  }
+
+  .shadow {
+    margin-left: 7.5rem;
+    filter: blur(8px);
+    margin-top: -2.5rem;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  .octagon {
+    margin: 60px 20px 60px 125px;
+  }
+
+  .shadow {
+    margin-left: 9.2rem;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .octagon {
+    margin: 60px 5px 15px 65px;
+  }
+
+  .shadow {
+    margin-left: 5.2rem;
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .octagon {
+    margin: 60px 5px 15px 72px;
+  }
+
+  .shadow {
+    margin-left: 5.7rem;
+    margin-top: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .octagon {
+    margin: 60px 5px 15px 85px;
+  }
+
+  .shadow {
+    margin-left: 6.5rem;
+    margin-top: 1.5rem;
+  }
 }

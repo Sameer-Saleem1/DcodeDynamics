@@ -1,14 +1,14 @@
-import wp from "./img/wordPress.png";
-import mui from "./img/mui.png";
-import mongo from "./img/mongo.png";
-import figma from "./img/figma.png";
-import css from "./img/css.png";
-import html from "./img/html.png";
-import react from "./img/react.svg";
-import adobe from "./img/adobe.svg";
-import webflow from "./img/webflow.svg";
-import js from "./img/js.svg";
-import bootstrap from "./img/bootstrap.webp";
+import wp from "./img/wordPress.jpeg";
+// import mui from "./img/mui.png";
+import mongo from "./img/mongo.jpeg";
+import figma from "./img/figma.jpeg";
+import css from "./img/css.jpeg";
+import html from "./img/html.jpeg";
+import react from "./img/react.jpeg";
+import adobe from "./img/adobe.jpeg";
+import webflow from "./img/workflow.jpeg";
+import js from "./img/js.jpeg";
+import bootstrap from "./img/bootstrap.jpeg";
 
 const list = [
   {
@@ -39,10 +39,10 @@ const list = [
     name: "JavaScript",
     img: js,
   },
-  {
-    name: "Material UI",
-    img: mui,
-  },
+  // {
+  //   name: "Material UI",
+  //   img: mui,
+  // },
   {
     name: "MongoDB",
     img: mongo,

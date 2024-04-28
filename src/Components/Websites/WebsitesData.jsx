@@ -1,14 +1,14 @@
-import wp from "../Tools/img/wordPress.png";
-import mui from "../Tools/img/mui.png";
-import mongo from "../Tools/img/mongo.png";
-import figma from "../Tools/img/figma.png";
-import css from "../Tools/img/css.png";
-import html from "../Tools/img/html.png";
-import react from "../Tools/img/react.svg";
-import adobe from "../Tools/img/adobe.svg";
-import webflow from "../Tools/img/webflow.svg";
-import js from "../Tools/img/js.svg";
-import bootstrap from "../Tools/img/bootstrap.webp";
+import wp from "../Tools/img/wordPress.jpeg";
+// import mui from "../Tools/img/mui.png";
+import mongo from "../Tools/img/mongo.jpeg";
+import figma from "../Tools/img/figma.jpeg";
+import css from "../Tools/img/css.jpeg";
+import html from "../Tools/img/html.jpeg";
+import react from "../Tools/img/react.jpeg";
+import adobe from "../Tools/img/adobe.jpeg";
+import webflow from "../Tools/img/workflow.jpeg";
+import js from "../Tools/img/js.jpeg";
+import bootstrap from "../Tools/img/bootstrap.jpeg";
 const data = [
   {
     name: "E-commerce website",

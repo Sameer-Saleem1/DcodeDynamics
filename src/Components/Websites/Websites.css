@@ -124,6 +124,13 @@
 /* Responsive CSS  */
 
 @media screen and (max-width: 768px) {
+  .website-container {
+    margin-top: 4rem !important;
+  }
+  .website-container-heading h1 {
+    font-size: 25px;
+    letter-spacing: 1px;
+  }
   .cards {
     grid-template-columns: auto;
     justify-content: center;

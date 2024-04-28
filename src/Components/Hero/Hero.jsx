@@ -21,7 +21,7 @@ const Hero = () => {
               color: "var(--light--)",
             }}
           >
-            or
+            OR
           </p>
           <Link to={"./services"} className={styles.services}>
             <p>View Services</p>

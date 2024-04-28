@@ -1,7 +1,7 @@
 import React from "react";
 import Tools from "./Components/Tools/Tools";
 import Websites from "./Components/Websites/Websites";
-import Footer from "./Components/Footer/Footer";
+// import Footer from "./Components/Footer/Footer";
 import Hero from "./Components/Hero/Hero";
 import Ourteam from "./Components/OurTeam/Ourteam";
 import "./App.css";

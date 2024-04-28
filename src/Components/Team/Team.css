@@ -1,0 +1,355 @@
+.main {
+  padding-top: 5rem;
+  margin-left: 8.2rem;
+  margin-right: 8.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.heading {
+  font-size: 50px;
+  color: #2ff360;
+}
+
+.imgs,.imgsr {
+  width: 12%;
+  height: 12%;
+  border-radius: 50%;
+}
+
+.naam {
+  font-size: 38px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #2ff360;
+}
+
+.member,
+.memberL {
+  display: flex;
+  gap: 3%;
+}
+
+.memberL {
+  justify-content: right;
+  align-items: flex-start;
+  text-align: right;
+}
+
+.desc,.descr {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  gap: 1rem;
+}
+
+.designation {
+  font-size: 25px;
+  margin-top: -2rem;
+}
+
+.details {
+  margin-top: -1rem;
+  font-size: 20px;
+}
+
+.colorg {
+  color: #2ff360;
+}
+
+.log {
+  font-size: 140%;
+  color: #2ff360;
+}
+
+.log2 {
+  font-size: 130%;
+  color: #2ff360;
+  margin-right: 0rem;
+  margin-left: 3rem;
+}
+
+.anchor {
+  text-decoration: none !important;
+  margin-left: 1rem;
+  margin-right: 0rem;
+  color: aliceblue;
+  letter-spacing: 0.1rem;
+}
+
+.anchor:hover {
+  transition: color 0.3s ease-in-out;
+  color: #2ff360;
+}
+
+.connect {
+  display: flex;
+  align-items: center;}
+
+.connectR {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-top: -1rem;
+}
+
+.design {
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .design {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .design {
+    font-size: 16px;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .main {
+    padding-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .design {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .design{
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .main {
+    padding-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  .design {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .main {
+    padding-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  
+  .design {
+    font-size: 12px;
+  }
+  .connect, .connectR{
+    flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+  .log,
+  .log2{
+    margin: 1rem;
+  }
+  
+}
+@media only screen and (max-width: 800px) {
+  .main {
+    padding-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .design {
+    font-size: 14px;
+  }
+  .connect, .connectR{
+    flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+  .log,
+  .log2{
+    margin: 1rem;
+  }
+  .imgsr{
+order: -1;
+  }
+.member,.memberL{
+  gap: 1%;
+}
+}
+@media only screen and (max-width: 700px) {
+  .main {
+    padding-top: 3rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+  }
+  
+  .design {
+    font-size: 12px;
+  }
+  .connect, .connectR{
+    flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+  .log,
+  .log2{
+    margin: 1rem;
+  }
+.member,
+.memberL{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+}
+.desc,.descr{
+  align-items:center;
+}
+.details{
+  text-align: center;
+}
+.imgs,.imgsr {
+  width: 30%;
+  height: 30%;
+  margin: 5rem;
+}
+
+.imgsr{
+  order: -1;
+    }
+    .member,.memberL{
+      gap: 1%;
+    }
+  }
+
+    @media only screen and (max-width: 600px) {
+      .main {
+        padding-top: 0.5rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem !important;
+      }
+      
+      .imgs,.imgsr {
+        width: 30%;
+        height: 30%;
+      }
+      
+      .heading {
+        font-size: 30px;
+      }
+      
+      .naam {
+        font-size: 22px;
+      }
+      
+      .designation {
+        font-size: 18px;
+      }
+      
+      .details {
+        font-size: 14px;
+      }
+      
+      .log {
+        font-size: 110%;
+      }
+      
+      .log2 {
+        font-size: 100%;
+      }
+      .member,.memberL{
+        gap: 0rem ;
+      }
+    }
+    
+
+@media only screen and (max-width: 576px) {
+  .main {
+    padding-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+  }
+  
+  .imgs,.imgsr {
+    width: 30%;
+    height: 30%;
+  }
+  
+  .heading {
+    font-size: 30px;
+  }
+  
+  .naam {
+    font-size: 22px;
+  }
+  
+  .designation {
+    font-size: 18px;
+  }
+  
+  .details {
+    font-size: 14px;
+  }
+  
+  .log {
+    font-size: 110%;
+  }
+  
+  .log2 {
+    font-size: 100%;
+  }
+  .member,.memberL{
+    gap: 0 !important;
+  }
+}

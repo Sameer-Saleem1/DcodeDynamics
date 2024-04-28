@@ -86,7 +86,7 @@
   align-items: center;
   gap: 1rem;
 }
-.buttons:nth-child(2){
+.buttons:nth-child(2) {
   margin-top: 4rem;
 }
 .services {
@@ -98,233 +98,74 @@
   color: var(--green--);
 }
 
+/* Media Screen query */
 
 @media screen and (max-width: 768px) {
-  .main{
+  .main {
     display: flex;
     flex-direction: column;
   }
   .left {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-left: 0rem;
     line-height: 30px;
   }
-  .left > :first-child{
+  .left > :first-child {
     font-size: 20px;
   }
   .right {
-  display: none;
+    display: none;
   }
-  
+
   .orderbutton {
-    margin-top: 1rem;
-  }
-
-  .buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-  }
-  
-  .buttons:nth-child(2){
-    margin-top: -0.5rem;
-  }
-
-  .services {
-  margin-top: -3rem;
-  }
-
-.heading{
-  font-size: 25px;
-  letter-spacing: 3px;
-  width: 150%;
-  text-align: center;
-  margin-top: -0.5rem;
-}
-.or{
-  margin-top: 0.5rem;
-}
-.text {
-  color: var(--light--);
-  font-size: 22px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  width: 100%;
-  text-align: center;
-  margin-top: -0.5rem;
-}
-}
-
-@media screen and (max-width: 1150px) {
-  .main {
-    gap: 2rem;
-  }
-  .heading{
-    font-size: 30px;
-    width: 150%;
-    margin-top: -0.5rem;
-    text-align: center;
-  }
-  .left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 25px;
-    width: 40%;
-    margin-left: 5rem;
-    margin-top: 3rem;
-  }
-  .text {
-    color: var(--light--);
-    font-size: 22px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    width: 100%;
-    text-align: center;
-    margin-top: 0rem;
-  }
-  .buttons{
-    margin-top: -1rem;
-  }
-  .orderbutton{
-    padding: 2px 20px;
-    border-radius: 10px;
-  }
-  .services{
-    font-size: 25px;
-  }
-
-.ploygon {
-  width: 100px;
-  height: 85px;
-  margin-top: 30px;
-  padding: 8px;
-}
-  
-.ploygon1 {
-  width: 150px;
-  height: 90px;
-  }
-}
-
-@media screen and (max-width: 950px) {
-  .main {
-    gap: 3rem;
-  }
-  .left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 25px;
-    width: 60%;
-    margin-left: 0rem;
-    margin-top: 3rem;
-  }
-  .heading{
-    font-size: 30px;
-    width: 150%;
-    margin-top: -0.5rem;
-    text-align: center;
-  }
-  .text {
-    color: var(--light--);
-    font-size: 22px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    width: 80%;
-    text-align: center;
-    margin-top: 0rem;
-  }
-  .orderbutton{
-    padding: 2px 20px;
-    border-radius: 10px;
-  }
-  .services{
-    font-size: 20px;
+    margin-left: 0;
+    padding: 3px 15px;
   }
   .ploygon {
-    width: 90px;
-    height: 80px;
-    margin-top: 30px;
-    padding: 8px;
+    width: 75px;
+    height: 65px;
+    margin-top: 12px;
+    padding: 5px;
   }
-    
-  .ploygon1 {
-    width: 140px;
-    height: 85px;
-    }
-  
-}
 
-@media screen and (max-width: 860px) and (min-width: 768px){
-  .main{
-    gap: 1rem;
-    justify-content: center;
+  .ploygon1 {
+    width: 180px;
+    height: 68px;
   }
-  .left{
-    margin-top: 2rem;
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
   }
-  .heading{
+  .services {
+    margin-top: -2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .services p {
+    font-size: 22px;
+  }
+  .ploygon3 {
+    margin-top: 1.3rem;
+  }
+  .ploygon4 {
+    margin-top: -2rem;
+  }
+  .ploygon2 {
+    margin-top: 4rem;
+  }
+  .heading {
     font-size: 25px;
-    width: 150%;
-    margin-top: -0.5rem;
-    text-align: center;
+    line-height: 1;
+    margin: 1px;
   }
 
   .text {
     color: var(--light--);
     font-size: 20px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    width: 100%;
-    text-align: center;
-    margin-top: 2rem;
+    line-height: 1.2;
   }
-.ploygon {
-  width: 85px;
-  height: 75px;
-  margin-top: 30px;
-  padding: 8px;
-}
-.buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 0.1rem;
-  margin-top: 0.5rem;
-  }
-  
-  .buttons:nth-child(2){
-    margin-top: -0.5rem;
-  }
-
-  .services {
-  margin-top: -3rem;
-  }
-
-.heading{
-  font-size: 25px;
-  letter-spacing: 3px;
-  width: 150%;
-  text-align: center;
-  margin-top: -0.5rem;
-}
-.or{
-  margin-top: 0.5rem;
-}
-.text {
-  color: var(--light--);
-  font-size: 22px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  width: 100%;
-  text-align: center;
-  margin-top: 0rem;
-}
-.ploygon1 {
-  width: 135px;
-  height: 80px;
-}
 }
