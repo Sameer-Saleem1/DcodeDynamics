@@ -24,7 +24,7 @@ body {
 }
 
 .octagon-container h3 {
-  margin-left: 30px;
+  margin-left: 45px;
   margin-bottom: -2rem;
 }
 
@@ -58,7 +58,7 @@ body {
   width: 70px;
   height: 10px;
   background-color: var(--green--);
-  margin-left: 5rem;
+  margin-left: 5.5rem;
   border-radius: 50%;
   filter: blur(8px);
   margin-top: -2.5rem;
@@ -152,6 +152,9 @@ body {
   .octagon {
     margin: 60px 5px 15px 65px;
   }
+  .octagon-container h3 {
+    margin-left: 30px;
+  }
 
   .shadow {
     margin-left: 5.2rem;
@@ -176,7 +179,7 @@ body {
   }
 
   .shadow {
-    margin-left: 6.5rem;
+    margin-left: 6.6rem;
     margin-top: 1.5rem;
   }
 }
