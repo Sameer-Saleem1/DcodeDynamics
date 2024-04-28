@@ -58,10 +58,7 @@ const Technology = () => {
             <div className={styles.description}>
               {index === expandedIndex && (
                 <div className={styles.textcontaier}>
-                  <p className={styles.text}>
-                    React is a JavaScript library for building user interfaces,
-                    developed by Facebook
-                  </p>
+                  <p className={styles.text}>{item.text}</p>
                 </div>
               )}
             </div>

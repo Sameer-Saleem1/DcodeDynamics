@@ -91,7 +91,7 @@
   animation: slideIn 1s ease forwards;
 }
 .text {
-  font-size: 20px;
+  font-size: 15px;
   color: white;
   text-align: center;
   width: 90%;
@@ -100,7 +100,7 @@
   background-color: var(--green--);
   font-size: 18px;
   border-radius: 10px;
-  padding: 5px 35px;
+  padding: 8px 30px;
   border: none;
   color: var(--dark--);
   font-weight: 600;
@@ -164,11 +164,12 @@
     display: flex;
     margin-left: 0%;
     justify-content: center;
+      margin-right: 0rem;
   }
 }
 
 
-@media screen and (max-width: 1260px)  and (min-width: 768px) {
+@media screen and (max-width: 1024px)  and (min-width: 768px) {
 
   .cardcontainer {
     display: flex;
@@ -176,6 +177,7 @@
     justify-content: start;
     width: 100%;
     gap: 2rem;
+    margin-right: 2.3rem;
   }
   .card {
     width: 170px;
