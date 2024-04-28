@@ -24,7 +24,7 @@ const App = () => {
           {/* <Route path="/order" element={<Websites />} />
           <Route path="/order" element={<Websites />} /> */}
         </Routes>
-        {/*<Footer />*/}
+        <Footer />
       </div>
     </Router>
   );
