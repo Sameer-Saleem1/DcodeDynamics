@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import Navbar from "./Components/Navbar/Navbar";
+import Navbar from "./Components/Navbar/Navbar";
 import LandingPage from "./LandingPage";
 import OrderNow from "./Components/OrderNow/OrderNow";
 import Technology from "./Components/Technology/Technology";
@@ -14,7 +14,7 @@ const App = () => {
   return (
     <Router>
       <div>
-        {/* <Navbar /> */}
+        <Navbar />
         <Routes>
           <Route path="/" element={<LandingPage />}></Route>
           <Route path="/order" element={<OrderNow />} />
