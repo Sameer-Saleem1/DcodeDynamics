@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Logo from "./D-codeLogo.png";
 import { RxHamburgerMenu } from "react-icons/rx";
 
-const Navbar = () => {
+const NaVbar = () => {
   const [showNavLinks, setShowNavLinks] = useState(false);
   const [activeLink, setActiveLink] = useState("");
 
@@ -135,4 +135,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NaVbar;
