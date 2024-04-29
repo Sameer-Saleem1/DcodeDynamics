@@ -12,8 +12,8 @@ import Service_Section from "./Components/Service_Section/Service_Section";
 
 const App = () => {
   return (
-    <Router>
-      <div>
+    <div>
+      <Router>
         <NaVbar />
         <Routes>
           <Route path="/" element={<LandingPage />}></Route>
@@ -24,9 +24,9 @@ const App = () => {
           {/* <Route path="/order" element={<Websites />} />
           <Route path="/order" element={<Websites />} /> */}
         </Routes>
-        <Footer />
-      </div>
-    </Router>
+      </Router>
+      <Footer />
+    </div>
   );
 };
 
