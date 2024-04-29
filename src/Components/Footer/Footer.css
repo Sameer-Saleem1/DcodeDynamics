@@ -56,7 +56,7 @@
 }
 .query {
   position: relative;
-  transform: translateY(-270px);
+  transform: translateY(-280px);
   z-index: 2;
   margin-left: 80px;
 }

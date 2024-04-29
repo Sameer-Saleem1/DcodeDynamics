@@ -1,232 +1,186 @@
-/* Importing Google Font */
 @import url("https://fonts.googleapis.com/css2?family=Anek+Gujarati&display=swap");
 
-/* Setting font-family */
-html,
-body,
-.nav-links {
-  font-family: "Anek Gujarati", sans-serif;
+:root {
+  --green--: #2FF360;
+  --dark--: #242122;
+  --light--: #F8F7F4;
 }
 
-/* Rest of your existing CSS */
-/* Add the rest of your CSS styles here */
-
-html {
-  background-color: black;
-  color: white;
-}
-
-body {
-  margin: 0; /* Remove default body margin */
-  padding: 0;
-}
-
-.navbar {
-  background-color: #242424;
-  z-index: 399;
+.nav-barL {
+  margin-top: 1rem;
   display: flex;
-  align-items: center;
-  height: 80px;
-  width: 100%;
-  position: fixed;
-}
-
-.navbar-container {
-  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%; /* Make navbar container span the full width */
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
-.navbar-logo {
-  color: #f8f7f4;
+.link-decoM {
+  text-decoration: none;
+  color: white;
   font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
+  position: relative; /* Add position relative */
 }
 
-.nav-menu {
-  display: flex;
-  list-style: none;
-}
-
-.nav-item {
-  margin: 0 2rem;
-}
-
-.nav-links {
-  color: #f8f7f4;
-  text-decoration: none;
-  font-size: 15px;
-}
-
-.nav-image {
-  width: 150px; /* Adjust the width as needed */
-  height: auto; /* Maintain aspect ratio */
-  margin-top: 0%;
-}
-
-.nav-icon {
-  color: #f8f7f4; /* Set icon color */
-  font-size: 24px; /* Set icon size */
-}
-.left-side {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-}
-
-.right-side {
-  display: flex;
-  list-style: none;
-  justify-content: space-around;
-  margin-right: 18px;
-}
-
-.middle {
-  margin-top: 0%;
-}
-.icon {
-  color: #2ff360;
-}
-
-.nav-links:hover {
-  color: #2ff360; /* Change color on hover */
-  transition: color 0.7s;
-}
-
-.nav-links:focus {
-  color: #2ff360; /* Change color on click */
-  position: relative; /* Position relative for absolute positioning of border */
-}
-
-.nav-links:focus::after {
-  content: "";
+.link-decoM.active::after {
+  content: ''; /* Add a pseudo-element */
   position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 100%;
-  border-radius: 20px;
-  border-bottom: 2px solid #2ff360;
+  left: 50%; /* Position from the center */
+  transform: translateX(-50%); 
+  bottom: 2px; /* Adjust as needed */
+  width: 100%; /* Initially set width to 0 */
+  height: 3px; /* Thickness of the underline */
+  background-color: #2FF360;
+  border-radius: 5px; /* Add border-radius for curved edges */
+  transition: width 0.2s ease-in-out; /* Add smooth transition */
 }
 
-/* For extra-large devices (large desktops) */
-@media screen and (min-width: 1200px) {
-  /* Optionally, you can add styles here to enhance the navbar layout for larger screens */
+.link-decoM.active:hover::after {
+  width: 0; /* Extend the underline on hover */
+}
+.DcodeM {
+  width: 12rem;
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
 
-  .navbar-container {
-    /* For example, you might want to increase the width of the navbar container */
-    max-width: 1200px; /* Adjust as needed */
-    margin: 0 auto; /* Center the navbar horizontally */
-  }
+.link-decoM.active {
+  color: #2FF360;
+}
 
-  /* You might also want to adjust the padding or margins of the navbar items for better spacing */
-  .nav-item {
-    margin: 0 20px; /* Adjust as needed */
-  }
+/* -----------------small screen size css---------------- */
+.nav-barpp {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  align-items: flex-start;
+  display: none;
+}
 
-  /* Optionally, you can increase the font size of navbar items or change other styles */
-  .nav-links {
-    font-size: 16px; /* Adjust as needed */
-  }
+.Dcode {
+  width: 10rem;
+  align-self: flex-start;
+}
 
-  /* If your logo needs adjustment for larger screens, you can add styles here */
-  .nav-image {
-    width: 150px; /* Adjust as needed */
+.icons {
+  font-size: 2rem;
+  margin-top: 1rem;
+  color: #F8F7F4;
+}
+
+.icons:hover {
+  color: #2FF360;
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: column;
+  background-color: #333333;
+  width: 8rem;
+  height: 10%;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  box-shadow: 0 1px 3px rgba(204, 204, 204, 0.411);
+  border-radius: 5px;
+}
+
+.link-deco {
+  font-size: 20px;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  font-family: 'Anek Gujarati';
+  color: #F8F7F4;
+}
+
+.link-deco:hover {
+  color: #2FF360;
+}
+.link-deco.active{
+  color: #2FF360;
+}
+.hamclick {
+  display: flex;
+  flex-direction: column;
+}
+
+/* --------------media queries---------------*/
+@media only screen and (max-width: 1300px) {
+  .DcodeM {
+    margin-left: 5rem;
+    margin-right: 5rem;
   }
 }
 
-/* For large devices (desktops) */
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-  .navbar-container {
-    justify-content: space-between; /* Adjust alignment for better spacing */
-  }
-
-  .left-side,
-  .right-side {
-    display: flex; /* Ensure left and right side elements are displayed */
-  }
-
-  .middle {
-    margin-top: 0; /* Reset margin */
-  }
-
-  .nav-menu {
-    flex-direction: row; /* Ensure menu items are displayed horizontally */
-  }
-
-  .nav-item {
-    margin: 0 1rem; /* Adjust item spacing */
+@media only screen and (max-width: 1200px) {
+  .DcodeM {
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 }
 
-/* For medium devices (laptops) */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .navbar-container {
-    flex-direction: row;
-    justify-content: space-between;
+@media only screen and (max-width: 1100px) {
+  .DcodeM {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .DcodeM {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    width: 10rem;
   }
 
-  .left-side,
-  .right-side {
+  .link-decoM {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .DcodeM {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    width: 8rem;
+  }
+
+  .link-decoM {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-barL {
+    display: none;
+  }
+
+  .nav-barpp {
     display: flex;
   }
-
-  .middle {
-    margin-top: 0; /* Reset margin */
-  }
-
-  .nav-menu {
-    display: flex;
-    justify-content: center;
-    flex: 1; /* Expand to fill remaining space */
-  }
-
-  .nav-item {
-    margin: 0 1rem; /* Adjust spacing */
-  }
 }
 
-/* For small devices (tablets: 576px to 767px) */
-@media screen and (min-width: 576px) and (max-width: 767px) {
-  .nav-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+@media only screen and (max-width: 576px) {
+  .nav-barpp {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
-  .nav-item {
-    margin: 0 10px; /* Adjust margin for menu items */
+  .Dcode {
+    width: 10rem;
   }
 
-  .logo-container {
-    display: none; /* Hide the logo for this range */
-  }
-}
-
-/* For small devices (phones) and extra small devices (up to 576px) */
-@media screen and (max-width: 576px) {
-  .navbar-container {
-    flex-direction: column;
-    align-items: center;
+  .icons {
+    font-size: 1.5rem;
   }
 
-  .nav-menu {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  .navlinks {
+    width: 6rem;
   }
 
-  .nav-item {
-    margin: 10px 0;
-  }
-}
-
-/* For small devices (tablets: 576px to 767px) */
-@media screen and (min-width: 577px) and (max-width: 767px) {
-  .nav-menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  .link-deco {
+    font-size: 16px;
   }
 }

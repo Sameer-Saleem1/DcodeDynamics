@@ -1,67 +1,136 @@
-// Navbar.jsx
-import React from "react";
+import React, { useState } from "react";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import "./Navbar.css"; // Importing App.css
 import { Link } from "react-router-dom";
+import Logo from "./D-codeLogo.png";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const Navbar = () => {
+  const [showNavLinks, setShowNavLinks] = useState(false);
+  const [activeLink, setActiveLink] = useState("");
+
+  const toggleNavLinks = () => {
+    setShowNavLinks(!showNavLinks);
+  };
+
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+    setShowNavLinks(false);
+  };
+
   return (
     <>
-      <nav className="navbar">
-        <div className="navbar-container">
-          <div className="left-side">
-            <ul className="nav-menu">
-              <li className="nav-item">
-                <Link to="/team" className="nav-links">
-                  Our Team
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/services" className="nav-links">
-                  Services
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/tech" className="nav-links">
-                  Technology
-                </Link>
-              </li>
-            </ul>
-          </div>
+      <div className="nav-barL">
+        <Link
+          to="/team"
+          className={`link-decoM ${activeLink === "team" ? "active" : ""}`}
+          onClick={() => handleLinkClick("team")}
+        >
+          Our Team
+        </Link>
 
-          <div className="middle">
-            <ul className="nav-menu">
-              <li className="nav-item">
-                <Link to={'./'}><img
-                  src="src\assets\D-codeLogo.png"
-                  alt="Dynamics"
-                  className="nav-image"
-                /></Link>
-              </li>
-            </ul>
-          </div>
+        <Link
+          to="/services"
+          className={`link-decoM ${activeLink === "services" ? "active" : ""}`}
+          onClick={() => handleLinkClick("services")}
+        >
+          Services
+        </Link>
 
-          <div className="right-side">
-            <ul className="nav-menu">
-              <li className="nav-item">
-                <Link to="/order" className="nav-links">
-                  Order Now
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link to="/contact" className="nav-links">
-                  Contact Us
-                </Link>
-              </li>
-              <li className="nav-item icon">
-                <MdOutlineShoppingCart
-                  style={{ fontSize: "20px", marginRight: "1rem" }}
-                />
-              </li>
-            </ul>
-          </div>
+        <Link
+          to="/tech"
+          className={`link-decoM ${
+            activeLink === "technology" ? "active" : ""
+          }`}
+          onClick={() => handleLinkClick("technology")}
+        >
+          Technology
+        </Link>
+
+        <div className="Mlogo">
+          <Link to="./">
+            {" "}
+            <img src={Logo} alt="" className="DcodeM" />
+          </Link>
         </div>
-      </nav>
+        <Link
+          to="/order"
+          className={`link-decoM ${activeLink === "order-now" ? "active" : ""}`}
+          onClick={() => handleLinkClick("order-now")}
+        >
+          Order now
+        </Link>
+        <Link
+          to="/contact-us"
+          className={`link-decoM ${
+            activeLink === "contact-us" ? "active" : ""
+          }`}
+          onClick={() => handleLinkClick("contact-us")}
+        >
+          Contact us
+        </Link>
+        <Link className="link-decoM">
+          <MdOutlineShoppingCart />
+        </Link>
+      </div>
+
+      {/* Small screensize navbar */}
+      <div className="nav-barpp">
+        <div className="hamclick" onClick={toggleNavLinks}>
+          <Link>
+            <RxHamburgerMenu className="icons" />
+          </Link>
+          {showNavLinks && (
+            <div className="navlinks">
+              <Link
+                to="/team"
+                className={`link-deco ${activeLink === "team" ? "active" : ""}`}
+                onClick={() => handleLinkClick("team")}
+              >
+                Our Team
+              </Link>
+              <Link
+                to="/services"
+                className={`link-deco ${
+                  activeLink === "services" ? "active" : ""
+                }`}
+                onClick={() => handleLinkClick("services")}
+              >
+                Services
+              </Link>
+              <Link
+                to="/technology"
+                className={`link-deco ${
+                  activeLink === "technology" ? "active" : ""
+                }`}
+                onClick={() => handleLinkClick("technology")}
+              >
+                Technology
+              </Link>
+              <Link
+                to="/order-now"
+                className={`link-deco ${
+                  activeLink === "order-now" ? "active" : ""
+                }`}
+                onClick={() => handleLinkClick("order-now")}
+              >
+                Order now
+              </Link>
+              <Link
+                to="/contact-us"
+                className={`link-deco ${
+                  activeLink === "contact-us" ? "active" : ""
+                }`}
+                onClick={() => handleLinkClick("contact-us")}
+              >
+                Contact us
+              </Link>
+            </div>
+          )}
+        </div>
+        <img src={Logo} alt="" className="Dcode" />
+        <MdOutlineShoppingCart className="icons" />
+      </div>
     </>
   );
 };
