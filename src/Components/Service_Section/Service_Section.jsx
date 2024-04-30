@@ -13,6 +13,24 @@ function Service_Section() {
   const [showOriginal, setShowOriginal] = useState(true);
   const [showAllDevelopment, setShowAllDevelopment] = useState(false);
   const [showAllDesign, setShowAllDesign] = useState(false);
+  const [numInitialCards, setNumInitialCards] = useState(8);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const screenWidth = window.innerWidth;
+      if (screenWidth < 600) {
+        setNumInitialCards(2);
+      } else if (screenWidth >= 600 && screenWidth < 882) {
+        setNumInitialCards(4);
+      } else {
+        setNumInitialCards(8);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Call handleResize initially
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -57,9 +75,6 @@ function Service_Section() {
         <div className="search-bar">
           <input placeholder="Search" onChange={handleChange}></input>
         </div>
-        {/* <div className="filter">
-          <TbFilterEdit className="filter-icon" />
-        </div> */}
       </div>
 
       {showOriginal && renderOriginalData()}
@@ -88,30 +103,28 @@ function Service_Section() {
           <h1>Web Development</h1>
         </div>
         <div className="cardcontainer">
-          {data
-            .slice(0, showAllDevelopment ? data.length : 8)
-            .map((item, index) => (
-              <div key={item.title} className="card">
-                <div className="left">
-                  <img className="image" src={image} alt="" />
-                </div>
-                <div className="right">
-                  <div className="description">
-                    <h1 className="websitename">{item.title}</h1>
-                    <div className="logos">
-                      <div className="logo"></div>
-                      <div className="logo"></div>
-                      <div className="logo"></div>
-                      <div className="logo"></div>
-                      <GoPlusCircle className="plusicon" />
-                    </div>
-                  </div>
-                  <button className="movebotton">
-                    <MdArrowOutward />
-                  </button>
-                </div>
+          {data.slice(0, numInitialCards).map((item, index) => (
+            <div key={item.title} className="card">
+              <div className="left">
+                <img className="image" src={image} alt="" />
               </div>
-            ))}
+              <div className="right">
+                <div className="description">
+                  <h1 className="websitename">{item.title}</h1>
+                  <div className="logos">
+                    <div className="logo"></div>
+                    <div className="logo"></div>
+                    <div className="logo"></div>
+                    <div className="logo"></div>
+                    <GoPlusCircle className="plusicon" />
+                  </div>
+                </div>
+                <button className="movebotton">
+                  <MdArrowOutward />
+                </button>
+              </div>
+            </div>
+          ))}
         </div>
         {!showAllDevelopment && (
           <div className="loadMoreButtonContainer">
@@ -128,7 +141,7 @@ function Service_Section() {
           <h1>Design</h1>
         </div>
         <div className="cardcontainer">
-          {data.slice(0, showAllDesign ? data.length : 8).map((item, index) => (
+          {data.slice(0, numInitialCards).map((item, index) => (
             <div key={item.title} className="card">
               <div className="left">
                 <img className="image" src={image} alt="" />

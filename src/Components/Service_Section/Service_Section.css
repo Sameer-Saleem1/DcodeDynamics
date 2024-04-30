@@ -168,10 +168,7 @@
   transition: width 0.2s ease, height 0.2s ease;
 }
 
-.movebotton:hover {
-  width: 53px;
-  height: 53px;
-}
+
 
 .loadMoreButtonContainer {
   display: flex;
