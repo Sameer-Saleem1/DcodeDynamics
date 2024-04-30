@@ -101,6 +101,7 @@
 
 .button-container button {
   text-decoration: none;
+  color: black;
   display: flex;
   font-size: 16px;
   align-items: center;

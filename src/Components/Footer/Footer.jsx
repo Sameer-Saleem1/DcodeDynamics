@@ -8,7 +8,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import "./Footer.css";
 const Footer = () => {
   return (
-    <div>
+    <div id="footer">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 1440 320"

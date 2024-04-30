@@ -61,10 +61,8 @@ const NaVbar = () => {
           Order now
         </Link>
         <Link
-          to="/contact-us"
-          className={`link-decoM ${
-            activeLink === "contact-us" ? "active" : ""
-          }`}
+          to="#footer"
+          className={`link-decoM ${activeLink === "contact" ? "active" : ""}`}
           onClick={() => handleLinkClick("contact-us")}
         >
           Contact us
@@ -99,7 +97,7 @@ const NaVbar = () => {
                 Services
               </Link>
               <Link
-                to="/technology"
+                to="/tech"
                 className={`link-deco ${
                   activeLink === "technology" ? "active" : ""
                 }`}
@@ -108,16 +106,16 @@ const NaVbar = () => {
                 Technology
               </Link>
               <Link
-                to="/order-now"
+                to="/order"
                 className={`link-deco ${
-                  activeLink === "order-now" ? "active" : ""
+                  activeLink === "order" ? "active" : ""
                 }`}
                 onClick={() => handleLinkClick("order-now")}
               >
                 Order now
               </Link>
               <Link
-                to="/contact-us"
+                to="#footer"
                 className={`link-deco ${
                   activeLink === "contact-us" ? "active" : ""
                 }`}
@@ -128,7 +126,9 @@ const NaVbar = () => {
             </div>
           )}
         </div>
-        <img src={Logo} alt="" className="Dcode" />
+        <Link to={"./"}>
+          <img src={Logo} alt="" className="Dcode" />
+        </Link>
         <MdOutlineShoppingCart className="icons" />
       </div>
     </>
