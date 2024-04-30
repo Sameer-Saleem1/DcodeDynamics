@@ -2,10 +2,10 @@
   /* min-height: 100vh; */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   font-family: "Anek Gujarati", sans-serif; /* Font fallback */
   color: var(--green--);
-  padding-top: 6rem;
+  padding-top: 1rem;
 }
 
 .left {
@@ -20,7 +20,7 @@
 .right {
   width: 50%;
   display: flex;
-  justify-content: start;
+  justify-content: center;
   margin-top: 0rem;
 }
 
@@ -98,9 +98,115 @@
   color: var(--green--);
 }
 
+@media screen and (max-width: 320px) {
+  .heading {
+    font-size:  18px !important;
+    line-height: 1.3;
+    margin: 1px;
+  }
+}
 /* Media Screen query */
+@media screen and (max-width: 375px){
+  .right {
+    display: none;
+  }
 
-@media screen and (max-width: 768px) {
+  .left {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0rem;
+    line-height: 30px;
+    width: 80%;
+  }
+  .heading {
+    font-size:  22px;
+    line-height: 1.3;
+    margin: 1px;
+    text-align: center;
+  }
+
+  .text {
+    color: var(--light--);
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .orderbutton {
+    margin-left: 0;
+    padding: 3px 15px;
+    font-size: 15px;
+    margin-top: 1rem;
+  }
+  .or{
+    margin-top: 0.5rem;
+    font-size: 20px !important;
+  }
+
+  .services{
+    margin-top: -2.5rem;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    margin-top: -0.6rem;
+  }
+
+  .services p {
+    font-size: 15px;
+  }
+
+}
+@media screen and  (min-width: 375px) and (max-width: 600px){
+  .right {
+    display: none;
+  }
+
+  .left {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0rem;
+    line-height: 30px;
+    width: 80%;
+  }
+  .heading {
+    font-size:  22px;
+    line-height: 1.3;
+    margin: 1px;
+    text-align: center;
+  }
+  .text {
+    color: var(--light--);
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+  }
+  .orderbutton {
+    margin-left: 0;
+    padding: 3px 15px;
+    font-size: 15px;
+  }
+  .or{
+    font-size: 15px !important;
+  }
+  .buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: -0.6rem;
+  }
+  
+  .services p {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px){
   .main {
     display: flex;
     flex-direction: column;
@@ -113,9 +219,7 @@
     align-items: center;
     margin-left: 0rem;
     line-height: 30px;
-  }
-  .left > :first-child {
-    font-size: 20px;
+    width: 70%;
   }
   .right {
     display: none;
@@ -124,29 +228,69 @@
   .orderbutton {
     margin-left: 0;
     padding: 3px 15px;
-  }
-  .ploygon {
-    width: 75px;
-    height: 65px;
-    margin-top: 12px;
-    padding: 5px;
+    font-size: 15px;
   }
 
-  .ploygon1 {
-    width: 180px;
-    height: 68px;
+  .buttons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .services p {
+    font-size: 22px;
+  }
+
+  .heading {
+    font-size:  40px;
+    line-height: 1.3;
+    margin: 1px;
+    text-align: center;
+  }
+
+  .text {
+    color: var(--light--);
+    font-size: 25px;
+    line-height: 1;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 900px){
+  .main {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .right{
+    justify-content: start;
   }
   .buttons {
     display: flex;
-    flex-direction: column;
-    gap: 0;
+    gap: 1rem;
   }
-  .services {
-    margin-top: -2.5rem;
-    margin-bottom: 1.5rem;
+
+  .or{
+    font-size: 18px !important;
   }
   .services p {
-    font-size: 22px;
+    font-size: 18px;
+  }
+
+  .heading {
+    font-size:  25px;
+    line-height: 1.3;
+    margin: 1px;
+  }
+
+  .text {
+    color: var(--light--);
+    font-size: 18px;
+    line-height: 1;
+    width: 80%;
   }
   .ploygon3 {
     margin-top: 1.3rem;
@@ -157,15 +301,75 @@
   .ploygon2 {
     margin-top: 4rem;
   }
+
+  .ploygon {
+    width: 65px;
+    height: 55px;
+    margin-top: 12px;
+    padding: 5px;
+  }
+  .ploygon1 {
+    width: 68px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+  .main {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .right{
+    justify-content: start;
+  }
+  .buttons {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .or{
+    font-size: 18px !important;
+  }
+  .services p {
+    font-size: 20px;
+  }
+
   .heading {
-    font-size: 25px;
-    line-height: 1;
+    font-size:  30px;
+    line-height: 1.3;
     margin: 1px;
   }
 
   .text {
     color: var(--light--);
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 1;
   }
+  .ploygon3 {
+    margin-top: 1.3rem;
+  }
+  .ploygon4 {
+    margin-top: -2rem;
+  }
+  .ploygon2 {
+    margin-top: 4rem;
+  }
+
+  .ploygon {
+    width: 90px;
+    height: 80px;
+    margin-top: 12px;
+    padding: 5px;
+  }
+  .ploygon1 {
+    width: 90px;
+    height: 80px;
+  }
+  
 }
