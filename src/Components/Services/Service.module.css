@@ -125,7 +125,7 @@
     height: 18%;
   }
   .arrow {
-    font-size: 50px;
+    font-size: 15px;
   }
 }
 @media screen and (max-width: 320px) {
