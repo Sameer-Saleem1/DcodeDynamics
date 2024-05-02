@@ -5,7 +5,7 @@ import data from "./Technologydata";
 const Technology = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 425);
   const [expandedIndex, setExpandedIndex] = useState(null);
-  const [visibleItems, setVisibleItems] = useState(isMobile ? 2 : 5);
+  const [visibleItems, setVisibleItems] = useState(isMobile ? 4 : 5);
 
   const toggleExpand = (index) => {
     setExpandedIndex(index === expandedIndex ? null : index);
@@ -13,7 +13,7 @@ const Technology = () => {
 
   const handleLoadMore = () => {
     setVisibleItems(
-      (prevVisibleItems) => prevVisibleItems + (isMobile ? 2 : 5)
+      (prevVisibleItems) => prevVisibleItems + (isMobile ? 4 : 5)
     );
   };
   // Add event listener to update isMobile state
