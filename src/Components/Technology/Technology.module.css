@@ -164,7 +164,21 @@
     display: flex;
     margin-left: 0%;
     justify-content: center;
-      margin-right: 0rem;
+    margin-right: 0rem;
+    gap: 2rem;
+  }
+  
+  .card {
+    width: 170px;   
+  }
+  .image {
+    width: 130px;
+  }
+  .image img {
+    width: 130px;
+  }
+  .trianglecontainer {
+    left: 50px;
   }
 }
 
@@ -180,8 +194,7 @@
     margin-right: 2.3rem;
   }
   .card {
-    width: 170px;
-    
+    width: 170px;   
   }
   .image {
     width: 130px;

@@ -55,7 +55,10 @@ const Servicecard = () => {
                 <div className={styles.logo}></div>
                 <div className={styles.logo}></div>
                 <div className={styles.logo}></div>
-                <GoPlusCircle className={styles.plusicon} />
+                <Link to={"./services"}>
+                  {" "}
+                  <GoPlusCircle className={styles.plusicon} />
+                </Link>
               </div>
             </div>
             <Link to={"./services"}>
