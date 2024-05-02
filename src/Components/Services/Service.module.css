@@ -120,6 +120,13 @@
   .swiperslides{
     margin-left: -0.2rem;
   }
+  .movebotton {
+    width: 18.5%;
+    height: 18%;
+  }
+  .arrow {
+    font-size: 50px;
+  }
 }
 @media screen and (max-width: 320px) {
   .swiper {
@@ -129,7 +136,5 @@
   }
   .swiperslides{
     margin-left: -0.15rem;
-    height: 325px !important;
-    width: 300px !important;
   }
 }
