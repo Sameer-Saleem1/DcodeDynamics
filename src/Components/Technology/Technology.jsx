@@ -6,9 +6,46 @@ const Technology = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 425);
   const [expandedIndex, setExpandedIndex] = useState(null);
   const [visibleItems, setVisibleItems] = useState(isMobile ? 4 : 5);
+  const [rotatedTriangles, setRotatedTriangles] = useState([]);
+  const [triangleColors, setTriangleColors] = useState([]);
+
+  useEffect(() => {
+    setRotatedTriangles(new Array(data.length).fill(false));
+    setTriangleColors(new Array(data.length).fill("var(--dark--)"));
+  }, []);
 
   const toggleExpand = (index) => {
-    setExpandedIndex(index === expandedIndex ? null : index);
+    // Check if the clicked card is already expanded
+    const isCurrentlyExpanded = expandedIndex === index;
+
+    // Toggle expanded index
+    setExpandedIndex((prevIndex) => (prevIndex === index ? null : index));
+
+    // Toggle rotation and color state for the clicked card
+    setRotatedTriangles(new Array(data.length).fill(false));
+    setRotatedTriangles((prevState) =>
+      prevState.map((val, i) => (i === index ? !val : false))
+    );
+    setTriangleColors(new Array(data.length).fill("var(--dark--)"));
+    setTriangleColors((prevState) =>
+      prevState.map((color, i) =>
+        i === index
+          ? color === "var(--dark--)"
+            ? "var(--green--)"
+            : "var(--dark--)"
+          : color
+      )
+    );
+
+    // Reset rotation and color state for the clicked card if it was already expanded
+    if (isCurrentlyExpanded) {
+      setRotatedTriangles((prevState) =>
+        prevState.map((val, i) => (i === index ? false : val))
+      );
+      setTriangleColors((prevState) =>
+        prevState.map((color, i) => (i === index ? "var(--dark--)" : color))
+      );
+    }
   };
 
   const handleLoadMore = () => {
@@ -16,7 +53,7 @@ const Technology = () => {
       (prevVisibleItems) => prevVisibleItems + (isMobile ? 4 : 5)
     );
   };
-  // Add event listener to update isMobile state
+
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 425);
@@ -47,11 +84,14 @@ const Technology = () => {
             >
               <img src={item.image} alt="" />
               <div className={styles.trianglecontainer}>
-                {" "}
                 <div
-                  className={`${styles.triangle} ${
-                    index === expandedIndex ? styles.triangle1 : ""
-                  }`}
+                  className={styles.triangle}
+                  style={{
+                    backgroundColor: triangleColors[index],
+                    transform: rotatedTriangles[index]
+                      ? "rotate(180deg)"
+                      : "rotate(0deg)",
+                  }}
                 ></div>
               </div>
             </div>

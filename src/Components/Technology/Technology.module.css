@@ -42,7 +42,8 @@
   transform: rotate(180deg);
   transition: 0.5s ease-in;
   background-color: var(--green--);
-}
+} 
+
 .image img {
   border-radius: 30px;
   width: 130px;
@@ -72,16 +73,15 @@
   border: 2px var(--green--) solid;
 }
 
-.triangle {
-  width: 15px;
-  height: 15px;
-  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  background-color: var(--dark--);
-}
-.triangle1 {
-  background-color: var(--green--);
-  transform: rotate(180deg);
-}
+  .triangle {
+    width: 15px;
+    height: 15px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: var(--dark--);
+
+  }
+
+
 .textcontaier {
   display: flex;
   justify-content: center;
@@ -90,12 +90,14 @@
   box-sizing: border-box; /* Include padding in width calculation */
   animation: slideIn 1s ease forwards;
 }
+
 .text {
   font-size: 15px;
   color: white;
   text-align: center;
   width: 90%;
 }
+
 .loadmore {
   background-color: var(--green--);
   font-size: 18px;
