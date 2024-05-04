@@ -24,7 +24,7 @@ body {
 }
 
 .octagon-container h3 {
-  margin-left: 45px;
+  margin-left: 45px !important;
   margin-bottom: -2rem;
 }
 
@@ -173,7 +173,7 @@ body {
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1300px) {
   .octagon {
     margin: 60px 5px 15px 85px;
   }
@@ -181,5 +181,153 @@ body {
   .shadow {
     margin-left: 6.6rem;
     margin-top: 1.5rem;
+  }
+  /* .octagon-container h3 {
+    margin-left: 120px !;
+  } */
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1299px) {
+  .octagon-container {
+    /* margin: 0; */
+  }
+  .octagon-main-container {
+    padding: 0 3rem 0 0.5rem;
+    /* margin-left: -1rem; */
+  }
+  .react-multiple-carousel__arrow--left::before {
+    margin-right: -4rem;
+  }
+  .react-multiple-carousel__arrow--right::before {
+    margin-right: 0;
+  }
+  .octagon-container h3 {
+    margin-left: 80px;
+  }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1199px) {
+  .octagon-main-container {
+    padding: 0 1.75rem 0 0;
+    margin-left: -3rem;
+  }
+  .react-multiple-carousel__arrow--left::before {
+    margin-right: -4rem;
+  }
+  .react-multiple-carousel__arrow--right::before {
+    margin-right: -0.2rem;
+  }
+  .octagon-container h3 {
+    margin-left: 80px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1099px) {
+  .octagon-main-container {
+    padding: 0 0.5rem;
+  }
+  .react-multiple-carousel__arrow--right::before {
+    margin-right: 1rem;
+  }
+  .octagon-container h3 {
+    margin-left: 35px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 999px) {
+  .octagon-main-container {
+    padding: 0 1.75rem 0 0;
+    margin-left: -1.75rem;
+  }
+  .react-multiple-carousel__arrow--right::before {
+    margin-right: 0;
+  }
+  .react-multiple-carousel__arrow--left::before {
+    margin-left: 1.75rem;
+  }
+  .octagon-container h3 {
+    margin-left: 50px;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 899px) {
+  .octagon-main-container {
+    padding: 0 1rem 0 0;
+    margin-left: -2.5rem;
+  }
+  .react-multiple-carousel__arrow--right::before {
+    margin-right: -1rem;
+  }
+  .react-multiple-carousel__arrow--left::before {
+    margin-left: 1.75rem;
+  }
+  .octagon-container h3 {
+    margin-left: 70px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 799px) {
+  .octagon-main-container {
+    padding: 0 2rem 0 0;
+  }
+  .octagon-container h3 {
+    margin-left: 35px;
+  }
+  .react-multiple-carousel__arrow--right::before {
+    margin-left: 0;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 699px) {
+  .octagon-main-container {
+    padding: 0;
+    margin-left: -3rem;
+  }
+  .react-multiple-carousel__arrow--left::before {
+    margin-left: 1.75rem;
+  }
+  .react-multiple-carousel__arrow--right::before {
+    margin-left: -0.75rem;
+  }
+  .octagon-container h3 {
+    margin-left: 20%;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 599px) {
+  .octagon-main-container {
+    padding: 0 2rem 0 0;
+  }
+  .octagon-container h3 {
+    margin-left: 11%;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 499px) {
+  .octagon-main-container {
+    padding: 0 2rem 0 0;
+  }
+  .react-multiple-carousel__arrow--left::before {
+    margin-left: 1rem;
+  }
+  .react-multiple-carousel__arrow--right::before {
+    margin-left: -1.75rem;
+  }
+  .octagon-container h3 {
+    margin-left: 8% !important;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .octagon-main-container {
+    padding-right: 3rem;
+    padding-left: 1.25rem;
+  }
+  .octagon-container h3 {
+    margin-left: 11%;
+  }
+
+  .react-multiple-carousel__arrow--left::before,
+  .react-multiple-carousel__arrow--right::before {
+    top: 9px;
   }
 }

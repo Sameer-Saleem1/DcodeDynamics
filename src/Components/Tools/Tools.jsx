@@ -21,8 +21,12 @@ function Tools() {
       breakpoint: { max: 768, min: 464 },
       items: 3,
     },
+    LargeMobile: {
+      breakpoint: { max: 599, min: 500 },
+      items: 2,
+    },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 499, min: 0 },
       items: 1,
     },
   };

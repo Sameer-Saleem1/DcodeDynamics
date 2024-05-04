@@ -131,8 +131,6 @@
     z-index: 2;
     margin-top: 20px;
     background-color: var(---primary--);
-    /* height: 0px; */
-    /* width: 355px; */
     color: var(--back--);
   }
   .box h2 {
