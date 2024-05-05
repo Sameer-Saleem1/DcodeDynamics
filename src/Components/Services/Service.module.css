@@ -120,9 +120,7 @@
   .swiperslides{
     margin-left: -0.15rem;
   }
-  .movebotton{
-    display: none;
-  }
+
 }
 @media screen and (max-width: 320px) {
   .swiper {
