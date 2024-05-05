@@ -66,7 +66,9 @@ const Servicecard = () => {
                 className={`${styles.movebotton} ${
                   activeIndex === index ? styles.activeButton : ""
                 }`}
-              ></button>
+              >
+                <HiArrowLongRight className={styles.arrow} />
+              </button>
             </Link>
           </SwiperSlide>
         ))}
