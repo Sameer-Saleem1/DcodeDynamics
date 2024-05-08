@@ -13,8 +13,7 @@
 .swiper {
     width: 75%;
     height: 70vh;
-    margin-top: 3rem;
-
+    margin-top: 3rem
   }
  .swiper-slide {
     display: flex;

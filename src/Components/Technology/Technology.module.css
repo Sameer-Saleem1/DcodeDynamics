@@ -44,8 +44,7 @@
   background-color: var(--green--);
 } 
 
-.image img {
-  border-radius: 30px;
+.image img {  border-radius: 30px;
   width: 130px;
   object-fit: cover;
   border: 2px var(--green--) solid;

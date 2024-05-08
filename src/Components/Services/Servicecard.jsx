@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import data from "./ServiceData";
 import styles from "./Service.module.css";
-import { HiArrowLongRight } from "react-icons/hi2";
+import { MdOutlineArrowOutward } from "react-icons/md";
 import { GoPlusCircle } from "react-icons/go";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -34,7 +34,7 @@ const Servicecard = () => {
           depth: 100,
           modifier: 4,
         }}
-        className={styles.swiper}
+        className={styles.swiper1}
       >
         {data.map((item, index) => (
           <SwiperSlide
@@ -51,10 +51,18 @@ const Servicecard = () => {
             <div className={styles.description}>
               <h1 className={styles.websitename}>{item.title}</h1>
               <div className={styles.logos}>
-                <div className={styles.logo}></div>
-                <div className={styles.logo}></div>
-                <div className={styles.logo}></div>
-                <div className={styles.logo}></div>
+                <div className={styles.logo}>
+                  <img className={styles.techoimg} src={item.logo1} alt="" />
+                </div>
+                <div className={styles.logo}>
+                  <img className={styles.techoimg} src={item.logo2} alt="" />
+                </div>
+                <div className={styles.logo}>
+                  <img className={styles.techoimg} src={item.logo3} alt="" />
+                </div>
+                <div className={styles.logo}>
+                  <img className={styles.techoimg} src={item.logo4} alt="" />
+                </div>
                 <Link to={"./services"}>
                   {" "}
                   <GoPlusCircle className={styles.plusicon} />
@@ -67,7 +75,7 @@ const Servicecard = () => {
                   activeIndex === index ? styles.activeButton : ""
                 }`}
               >
-                <HiArrowLongRight className={styles.arrow} />
+                <MdOutlineArrowOutward className={styles.arrow} />
               </button>
             </Link>
           </SwiperSlide>
